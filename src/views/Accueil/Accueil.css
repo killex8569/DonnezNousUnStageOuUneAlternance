@@ -1,0 +1,157 @@
+/* Reset basique */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Couleurs extraites de l'image */
+  :root {
+    --primary-green: #AAB396; /* Le vert mousse du header/footer */
+    --bg-beige: #F2EFE4;      /* Le fond des cartes */
+    --text-red: #8d3828;      /* Le texte rouge/rose */
+    --placeholder-gray: #D9D9D9;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--primary-green);
+    padding: 20px 0;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Section Profils */
+  .main-title {
+    color: var(--text-red);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+  
+  .profiles-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .placeholder-square {
+    background-color: var(--placeholder-gray);
+    width: 100px;
+    height: 120px;
+  }
+  
+  .dashed-text {
+    text-align: center;
+    color: #666;
+    font-family: monospace;
+    line-height: 0.8;
+  }
+  
+  /* Boite centrale info (CPE Lyon...) */
+  .central-info-box {
+    background-color: var(--bg-beige);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: -30px; /* Petit effet de chevauchement visuel ou ajustement */
+    position: relative;
+    z-index: -1; /* Pour que les carrés gris passent au dessus si besoin */
+    padding-top: 50px; /* Espace pour ne pas coller aux carrés */
+  }
+  
+  /* Cartes (Features) */
+  .feature-card {
+    background-color: var(--bg-beige);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+  }
+  
+  .feature-card.reverse {
+    flex-direction: row-reverse; /* Inverse l'ordre pour l'image à gauche */
+  }
+  
+  .text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .dashed-text-content p {
+    line-height: 0.5;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .image-content {
+    flex: 0 0 150px; /* Largeur fixe pour l'image */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .placeholder-square.large {
+    width: 140px;
+    height: 160px;
+  }
+  
+  /* CTA */
+  .cta-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .cta-intro {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary-green);
+    height: 150px;
+    width: 100%;
+    margin-top: auto;
+  }

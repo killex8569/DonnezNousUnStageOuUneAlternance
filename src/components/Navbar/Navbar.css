@@ -1,15 +1,7 @@
-:root {
-    --primary: #4a6b4b; /* Le vert mousse du header/footer */
-    --bg: #F2EFE4;      /* Le fond des cartes */
-    --secondary: #ffffff80;
-    --text-color-dark: #4A4A4A;
-    --text-color-light: #f2f2f2;
-}
-
 .topnav {
     height: 70px;
     padding: 0px 20px;
-    background: var(--primary);
+    background: var(--accent-primary);
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -35,7 +27,7 @@
   
   .menu a:hover,
   .menu a.active-link {
-    background: var(--secondary);
+    background: var(--accent-secondary);
     color: var(--text-color-dark);
     border-radius: 15px;
     height: 50px;

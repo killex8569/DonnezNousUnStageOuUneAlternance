@@ -26,7 +26,7 @@ function Accueil() {
 
         <div className="inline-center">
           <div className="profile-item">
-            <div className="placeholder-square">Valentin</div>
+            <img src="valentin.jpg" alt="Photo Valentin Ryckaert" style={{height: 320}}/>
             <h2>Valentin Ryckaert</h2>
           </div>        
           <div className="profile-item">
@@ -38,13 +38,13 @@ function Accueil() {
 
         {/* Texte central */}
         <div className="inline-center feature-card">
-          <div className="placeholder-square">Logo CPE Lyon</div>
+          <img src="cpe-lyon.jpg" alt="CPE Lyon" style={{width: 400}}/>
           <div className="central-info-box">
             <h3>A l'école CPE LYON</h3>
             <h3>A la recherche d'un stage du X</h3>
             <h3>au Y et d'une alternance...</h3>
           </div>
-          <div className="placeholder-square">Logo Chartreux</div>
+          <img src="logo-chartreux.png" alt="Chartreux" style={{width: 400}}/>
         </div>
       </section>
         

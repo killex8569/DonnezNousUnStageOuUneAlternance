@@ -1,0 +1,92 @@
+.container {
+  padding: 40px 20px;
+}
+
+/* Section Profils */
+.main-title {
+  color: var(--text-red);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.inline-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.placeholder-square {
+  background-color: var(--placeholder-gray);
+  width: 300px;
+  height: 320px;
+  margin-inline: 70px;
+}
+
+/* Boite centrale info (CPE Lyon...) */
+.central-info-box {
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  padding-top: 50px;
+}
+
+/* Cartes (Features) */
+.feature-card {
+  background-color: var(--bg-primary);
+  margin-block: 50px;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+  .feature-card {
+    margin-inline: 90px;
+  }
+}
+
+.feature-card.reverse {
+  flex-direction: row-reverse; /* Inverse l'ordre pour l'image à gauche */
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.placeholder-square.large {
+  width: 140px;
+  height: 160px;
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+}
+
+.cta-intro {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cta-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}

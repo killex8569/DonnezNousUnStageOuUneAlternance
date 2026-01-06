@@ -25,9 +25,7 @@ function Navbar() {
 
         {/* Desktop Menu, which only appears on large screens */}
         <div className='menu'>
-          <a href='#accueil' className='active-link'>
-            Accueil
-          </a>
+          <a href='#accueil' className='active-link'>Accueil</a>
           <a href='#noscompetences'>Nos Compétences</a>
           <a href='#notreparcours'>Notre parcours</a>
           <a href='#apropos'>A propos</a>

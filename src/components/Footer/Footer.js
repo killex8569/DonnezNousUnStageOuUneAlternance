@@ -18,7 +18,7 @@ const Footer = () => (
                     <ul>
                         <li><a target="_blank" href="https://react.dev/">React</a></li>
                         <li><a target="_blank" href="https://nodejs.org/en">Node.js</a></li>
-                        <li><a target="_blank" href="#">Lien GitHub</a></li>
+                        <li><a target="_blank" href="https://github.com/killex8569/jeveuxunstageouunealternance">Lien GitHub</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -31,7 +31,7 @@ const Footer = () => (
                 <div class="footer-col">
                     <h4>Nous contacter</h4>
                     <ul>
-                        <li><a target="_blank" href="mailto:alexandre@email.com">alexandre@email.com</a></li>
+                        <li><a target="_blank" href="mailto:alexandre.faublanette@gmail.com">alexandre.faublanette@gmail.com</a></li>
                         <li><a target="_blank" href="mailto:valentin.ryckaert@protonmail.com">valentin.ryckaert@protonmail.com</a></li>
                     </ul>
                     <div class="social-links">

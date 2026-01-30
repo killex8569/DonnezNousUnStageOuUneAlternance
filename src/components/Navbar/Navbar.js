@@ -1,13 +1,14 @@
-import { useState } from 'react';
-import './Navbar.css';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import './Navbar.css'
 
 // Define MobileMenu component
 const MobileMenu = () => {
   return (
     <div className='mobile-menu'>
           <a href='#accueil'>Accueil</a>
-          <a href='#noscompetences'>Nos Compétences</a>
-          <a href='#notreparcours'>Notre parcours</a>
+          <a href='#noscompetences'>Nos compétences</a>
+          <a href='#notreparcours'>Notre Parcours</a>
           <a href='#apropos'>A propos</a>
     </div>
   );
@@ -25,10 +26,10 @@ function Navbar() {
 
         {/* Desktop Menu, which only appears on large screens */}
         <div className='menu'>
-          <a href='#accueil' className='active-link'>Accueil</a>
-          <a href='#noscompetences'>Nos Compétences</a>
-          <a href='#notreparcours'>Notre parcours</a>
-          <a href='#apropos'>A propos</a>
+          <Link to="/">Accueil</Link>
+          <Link to="/competences">Nos compétences</Link>
+          <Link to="/parcours">Notre parcours</Link>
+          <Link to="/apropos">A propos</Link>
         </div>
 
         {/* This button only shows up on small screens. It is used to open the mobile menu */}

@@ -1,17 +1,6 @@
-import { useState } from 'react';
-import './Navbar.css';
-
-// Define MobileMenu component
-const MobileMenu = () => {
-  return (
-    <div className='mobile-menu'>
-          <a href='#accueil'>Accueil</a>
-          <a href='#noscompetences'>Nos Compétences</a>
-          <a href='#notreparcours'>Notre parcours</a>
-          <a href='#apropos'>A propos</a>
-    </div>
-  );
-};
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import './Navbar.css'
 
 function Navbar() {
   const [isShown, setIsShown] = useState(false);
@@ -19,16 +8,31 @@ function Navbar() {
     setIsShown(!isShown);
   };
 
+  // Define MobileMenu component
+  const MobileMenu = () => {
+    return (
+      <div className='mobile-menu'>
+        {/* Because here isShown = true, calling toogleMobileMenu sets isShown to false in every case */}
+        <Link to="/" onClick={toggleMobileMenu}>Accueil</Link>
+        <Link to="/competences" onClick={toggleMobileMenu}>Nos compétences</Link>
+        <Link to="/parcours" onClick={toggleMobileMenu}>Notre parcours</Link>
+        <Link to="/apropos" onClick={toggleMobileMenu}>A propos</Link>
+      </div>
+    );
+  };
+
+  const [ActiveLink, setActiveLink] = useState(0);
+
   return (
     <>
       <div className='topnav'>
 
         {/* Desktop Menu, which only appears on large screens */}
         <div className='menu'>
-          <a href='#accueil' className='active-link'>Accueil</a>
-          <a href='#noscompetences'>Nos Compétences</a>
-          <a href='#notreparcours'>Notre parcours</a>
-          <a href='#apropos'>A propos</a>
+          <Link to="/" className={ActiveLink === 0 ? "active-link" : ""} onClick={() => { setActiveLink(0) }}>Accueil</Link>
+          <Link to="/competences" className={ActiveLink === 1 ? "active-link" : ""} onClick={() => { setActiveLink(1) }}>Nos compétences</Link>
+          <Link to="/parcours" className={ActiveLink === 2 ? "active-link" : ""} onClick={() => { setActiveLink(2) }}>Notre parcours</Link>
+          <Link to="/apropos" className={ActiveLink === 3 ? "active-link" : ""} onClick={() => { setActiveLink(3) }}>A propos</Link>
         </div>
 
         {/* This button only shows up on small screens. It is used to open the mobile menu */}

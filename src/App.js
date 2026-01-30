@@ -2,21 +2,25 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Accueil from './views/Accueil/Accueil'
 import Navbar from './components/Navbar/Navbar'
 import './App.css'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* Navigation */}
-      <Navbar/>
+    <>
+      <BrowserRouter>
+        {/* Navigation */}
+        <Navbar/>
 
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/competences" element={<h1>Nos compétences</h1>} />
-        <Route path="/parcours" element={<h1>Notre parcours</h1>} />
-        <Route path="/apropos" element={<h1>A propos</h1>} />
-      </Routes>
-    </BrowserRouter>
+        {/* Routes */}
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/competences" element={<h1>Nos compétences</h1>} />
+          <Route path="/parcours" element={<h1>Notre parcours</h1>} />
+          <Route path="/apropos" element={<h1>A propos</h1>} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 

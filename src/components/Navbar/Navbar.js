@@ -2,22 +2,23 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
-// Define MobileMenu component
-const MobileMenu = () => {
-  return (
-    <div className='mobile-menu'>
-          <a href='#accueil'>Accueil</a>
-          <a href='#noscompetences'>Nos compétences</a>
-          <a href='#notreparcours'>Notre Parcours</a>
-          <a href='#apropos'>A propos</a>
-    </div>
-  );
-};
-
 function Navbar() {
   const [isShown, setIsShown] = useState(false);
   const toggleMobileMenu = () => {
     setIsShown(!isShown);
+  };
+
+  // Define MobileMenu component
+  const MobileMenu = () => {
+    return (
+      <div className='mobile-menu'>
+        {/* Because here isShown = true, calling toogleMobileMenu sets isShown to false in every case */}
+        <Link to="/" onClick={toggleMobileMenu}>Accueil</Link>
+        <Link to="/competences" onClick={toggleMobileMenu}>Nos compétences</Link>
+        <Link to="/parcours" onClick={toggleMobileMenu}>Notre parcours</Link>
+        <Link to="/apropos" onClick={toggleMobileMenu}>A propos</Link>
+      </div>
+    );
   };
 
   const [ActiveLink, setActiveLink] = useState(0);

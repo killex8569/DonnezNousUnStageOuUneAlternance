@@ -1,9 +1,9 @@
 import './Footer.css';
 
 const Footer = () => (
-    <footer class="footer">
+    <footer class="footer-footer">
         <div class="footer-container">
-            <div class="row">
+            <div class="footer-row">
                 <div class="footer-col">
                     <h4>Plan du site</h4>
                     <ul>

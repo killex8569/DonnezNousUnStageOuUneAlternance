@@ -1,5 +1,6 @@
 .accueil-container {
   padding: 40px 20px;
+  color: var(--text-color-dark);
 }
 
 /* Section Profils */
@@ -22,6 +23,11 @@
   align-items: center;
   gap: 10px;
   margin-inline: 30px;
+
+}
+
+.accueil-profile-item h4 {
+  margin-top: 20px;
 }
 
 .accueil-placeholder-square {

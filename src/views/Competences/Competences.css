@@ -52,6 +52,12 @@
   .competences-title-container {
     text-align: center;
   }
+
+  .competences-bold {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
   
   .competences-title {
     margin-block: 10px;

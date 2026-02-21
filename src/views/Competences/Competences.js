@@ -61,15 +61,18 @@ const ValentinProfile = () => {
       "Linux": 'logos/linux.png',
       "Serveur Linux": 'logos/debian.png',
       "DNS": '',
+      "DHCP": '',
       "Routage": '',
     },
     // Cybersécurité
     {
-      "Pare-feux": '',
+      "OPNSense": 'logos/opnsense.svg',
+      "WAF": 'logos/logo-safeline.png',
       "Horodatage": '',
       "Chiffrement": '',
-      "SafeLine (WAF)": 'logos/logo-safeline.png',
-      "Sécurité Réseaux": ''
+      "Sécurité Réseaux": '',
+      "Sécurité applicative": '',
+      "Bonnes pratiques cyber": ''
     },
     // DevOps
     {
@@ -99,6 +102,18 @@ const ValentinProfile = () => {
   return (
     <>
         <h1 className="competences-title">Valentin</h1>
+        <h4 className="competences-bold">Résumé</h4>
+        <h5>Durant ma formation, j'ai pu acquérir des bonnes connaissances en développement, notamment en développement web.</h5>
+        <h5>J'ai pu aussi approfondir mes connaissances en infrastructure logicielle, avec des outils comme Docker, Apache, Nginx, CasaOS, Qemu/KVM etc...</h5>
+        <h5>Par ailleurs, j'utilise Linux quotidiennement, en tant que système d'exploitation principal.</h5>
+        <h4 className="competences-bold">Intitulés de postes idéaux</h4>
+        <h5>Développeur web</h5>
+        <h5>Développeur logiciel</h5>
+        <h5>Concepteur développeur</h5>
+        <h5>Ingénieur Cybersécurité</h5>
+        <h5>Ingénieur DevOps</h5>
+        <h5>Administrateur Systèmes</h5>
+        <h4 className="competences-bold">Tableau de compétences</h4>
         <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
     </>
   )

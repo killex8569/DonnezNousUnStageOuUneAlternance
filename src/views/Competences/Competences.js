@@ -230,6 +230,10 @@ const ValentinProfile = () => {
       "DNS": '',
       "DHCP": '',
       "Routage": '',
+      "VLAN": '',
+      "Cisco": '',
+      "Switching": '',
+      "VLSM/FLSM": ''
     },
 
     // Virtualisation
@@ -318,17 +322,32 @@ const ValentinProfile = () => {
   return (
     <>
         <h1 className="competences-title">Valentin</h1>
-        <h4 className="competences-bold">Résumé</h4>
-        <h5>Durant ma formation, j'ai pu acquérir des bonnes connaissances en développement, notamment en développement web.</h5>
-        <h5>J'ai pu aussi approfondir mes connaissances en infrastructure logicielle, avec des outils comme Docker, Apache, Nginx, CasaOS, Qemu/KVM etc...</h5>
-        <h5>Par ailleurs, j'utilise Linux quotidiennement, en tant que système d'exploitation principal.</h5>
-        <h4 className="competences-bold">Intitulés de postes idéaux</h4>
-        <h5>Développeur web</h5>
-        <h5>Développeur logiciel</h5>
-        <h5>Concepteur développeur</h5>
-        <h5>Ingénieur Cybersécurité</h5>
-        <h5>Ingénieur DevOps</h5>
-        <h5>Administrateur Systèmes</h5>
+        <div class="container text-center">
+          <div class="row align-items-start mb-5 mt-3">
+            <div class="col">
+            <h4 className="competences-bold">Résumé</h4>
+              <div class="border border-2 rounded-3 p-3">
+                <h5>Durant ma formation, j'ai pu acquérir des bonnes connaissances en développement, notamment en développement web.</h5>
+                <h5>J'ai pu aussi approfondir mes connaissances en infrastructure logicielle, avec des outils comme Docker, Apache, Nginx, CasaOS, Qemu/KVM etc...</h5>
+                <h5>Par ailleurs, j'utilise Linux quotidiennement, en tant que système d'exploitation principal.</h5>
+              </div>
+            </div>
+            <div class="col">
+            <h4 className="competences-bold">Intitulés de postes idéaux</h4>
+              <div class="row">
+                <div class="col-md-3 col-sm-0"></div>
+                <div class="col-md-6 col-sm border border-2 rounded-3 p-3">
+                  <h5>Développeur web full-stack</h5>
+                  <h5>Développeur logiciel</h5>
+                  <h5>Concepteur développeur</h5>
+                  <h5>Ingénieur Cybersécurité</h5>
+                  <h5>Ingénieur DevOps</h5>
+                  <h5>Administrateur Systèmes</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <h4 className="competences-bold">Tableau de compétences</h4>
         <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
         <h2 className='Certifications'>Mes Certifications</h2>

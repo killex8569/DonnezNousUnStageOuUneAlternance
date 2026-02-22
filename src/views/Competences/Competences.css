@@ -5,6 +5,7 @@
     align-items: center;
     padding: 20px;
     font-family: Arial, sans-serif;
+    color: var(--text-color-dark);
   }
   
   .competences-switch-container {
@@ -42,7 +43,6 @@
   .competences-label {
     cursor: pointer;
     font-weight: bold;
-    color: #555;
   }
   
   .competences-active-label {
@@ -62,7 +62,6 @@
   .competences-title {
     margin-block: 10px;
     font-size: 30px;
-    color: #333;
   }
   
 

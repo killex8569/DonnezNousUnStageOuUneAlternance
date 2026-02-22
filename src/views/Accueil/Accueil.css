@@ -11,14 +11,16 @@
   margin-bottom: 70px;
 }
 
+.accueil-img {
+  border-radius: 3%;
+}
+
 .accueil-inline-center {
-  display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .accueil-profile-item {
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -52,15 +54,25 @@
   margin-block: 50px;
   border-radius: 20px;
   padding: 30px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
   min-height: 200px;
 }
 
 @media screen and (min-width: 800px) {
   .accueil-feature-card {
     margin-inline: 90px;
+  }
+
+  .accueil-inline-center {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .accueil-feature-card {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

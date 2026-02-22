@@ -129,7 +129,7 @@ const AlexandreProfile = () => {
       "Suite office": '',
       "VsCode": '',
       "IntelliJ": '',
-      
+
     },
   ];
 
@@ -161,11 +161,9 @@ const AlexandreProfile = () => {
     <>
     <h1 className="competences-title">Alexandre</h1>
     <h4 className="competences-bold">Résumé</h4>
-    <h5>
-      Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.
-      J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack), en scripting et automatisation,
-      en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.
-  </h5>
+    <h5>Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.</h5>
+    <h5>J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack),</h5>
+    <h5>en scripting et automatisation, en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.</h5>
     <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
     <h2 className='Certifications'>Mes Certifications</h2>
     <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>

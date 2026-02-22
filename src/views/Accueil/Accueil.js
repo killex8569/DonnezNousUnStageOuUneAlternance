@@ -33,8 +33,8 @@ function Accueil() {
             <h5 style={{color: "red"}}>n'a pas encore d'alternance</h5>
           </div>        
           <div className="accueil-profile-item">
-            <div className="accueil-placeholder-square">Alexandre</div>
-            <h3>Alexandre F. Anette</h3>
+            <img src="Alexandre.png" alt="Photo Alexandre FA" style={{height: 320}}/>
+            <h3>Alexandre F.A</h3>
             <h5 style={{color: "red"}}>n'a pas encore de stage</h5>
             <h5 style={{color: "red"}}>n'a pas encore d'alternance</h5>
           </div>

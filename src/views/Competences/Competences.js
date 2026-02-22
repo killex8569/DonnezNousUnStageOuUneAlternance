@@ -3,8 +3,107 @@ import CompetencesTable from '../../components/CompetencesTable/ComptencesTable'
 import './Competences.css';
 
 const AlexandreProfile = () => {
+  let skillFamilyList = [
+    "Web",
+    "Programmation",
+    "Base de données",
+    "Système/Réseau",
+    "Virtualisation",
+    "Cybersécurité",
+    "DevOps",
+    "DPL/Webmarketing",
+    "Soft Skills",
+    "Langues"
+  ];
+  let skillsDictionnary = [
+    // Web
+    {
+      "FastAPI": 'logos/fastapi.png',
+      "Vue.js": 'logos/vue.png',
+      "Node.js": 'logos/nodejs.png',
+      "Bootstrap": 'logos/bootstrap.png',
+      "Figma": 'logos/figma.png',
+    },
+    // Programmation
+    {
+      "Python": 'logos/python.png',
+      "Java": 'logos/java.png',
+      "C": 'logos/C.png',
+      "PHP": 'logos/php.png',
+    },
+    // Base de Données
+    {
+      "MariaDB": 'logos/mariadb.png',
+      "PostgreSQL": 'logos/postgresql.png',
+      "MySQL": ''
+    },
+    // Système/Réseau
+    {
+      "Windows": 'logos/windows.png',
+      "Linux": 'logos/linux.png',
+      "Serveur Linux": 'logos/debian.png',
+      "DNS": '',
+      "DHCP": '',
+      "Routage": '',
+      "VLAN": '',
+      "Cisco": '',
+      "Switching": '',
+      "VLSM/FLSM": '',
+      "Supervision": '',
+      "Active Directory": '',
+      "Harden AD": '',
+      "Hello My Dir": '',
+    },
+
+    // Virtualisation
+    {
+      "Proxmox": '',
+      "Hyper-V": '',
+      "VMWare": '',
+      "vSphere": '',
+    },
+    // Cybersécurité
+    {
+      "OPNSense": 'logos/opnsense.svg',
+      "Horodatage": '',
+      "Chiffrement": '',
+      "Sécurité Réseaux": '',
+      "Sécurité applicative": '',
+      "Bonnes pratiques cyber": '',
+      "Labtainers": '',
+
+    },
+    // DevOps
+    {
+      "Docker": 'logos/docker.png',
+      "Github": 'logos/github.png',
+      "Gitlab": 'logos/gitlab.png',
+      "Apache": '',
+    },
+    // DPL/Webmarketing
+    {
+      "WordPress": 'logos/wordpress.png',
+      "Référencement/SEO": '',
+      "E-mailing": '',
+    },
+    // Soft Skills
+    {
+      "Autoapprenissage": '',
+      "Travail en équipe": '',
+      "Conduite de projet": '',
+    },
+    // Langues
+    {
+      "Anglais": '',
+    },
+  ]
+
   return (
+    <>
     <h1 className="competences-title">Alexandre</h1>
+
+    <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
+    </>
   )
 }
 
@@ -72,18 +171,20 @@ const ValentinProfile = () => {
       "Chiffrement": '',
       "Sécurité Réseaux": '',
       "Sécurité applicative": '',
-      "Bonnes pratiques cyber": ''
+      "Bonnes pratiques cyber": '',
+      "Labtainers": ''
     },
     // DevOps
     {
       "Docker": 'logos/docker.png',
       "Github": 'logos/github.png',
-      "Gitlab": 'logos/gitlab.png'
+      "Gitlab": 'logos/gitlab.png',
+      "Apache": ''
     },
     // DPL/Webmarketing
     {
       "WordPress": 'logos/wordpress.png',
-      "Référencement": '',
+      "Référencement/SEO": '',
       "E-mailing": '',
     },
     // Soft Skills

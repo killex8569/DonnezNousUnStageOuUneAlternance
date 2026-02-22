@@ -395,7 +395,7 @@ const Competences = () => {
       </div>
 
       {/* Titres */}
-      <div className="competences-title-container">
+      <div className="competences-profile-container">
         {!isActive ? <ValentinProfile/> : null}
         {isActive ? <AlexandreProfile/> : null}
       </div>

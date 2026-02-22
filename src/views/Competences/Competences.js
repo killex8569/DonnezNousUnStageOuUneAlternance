@@ -13,7 +13,10 @@ const AlexandreProfile = () => {
     "DevOps",
     "DPL/Webmarketing",
     "Soft Skills",
-    "Langues"
+    "Langues",
+    "Certifications",
+    "Linux",
+    "Outils"
   ];
   let skillsDictionnary = [
     // Web
@@ -35,7 +38,7 @@ const AlexandreProfile = () => {
     {
       "MariaDB": 'logos/mariadb.png',
       "PostgreSQL": 'logos/postgresql.png',
-      "MySQL": ''
+      "MySQL": 'logos/mysql.svg'
     },
     // Système/Réseau
     {
@@ -46,26 +49,29 @@ const AlexandreProfile = () => {
       "DHCP": '',
       "Routage": '',
       "VLAN": '',
-      "Cisco": '',
+      "Cisco": 'logos/cisco.png',
       "Switching": '',
       "VLSM/FLSM": '',
       "Supervision": '',
-      "Active Directory": '',
+      "Active Directory": 'logos/AD.jpg',
       "Harden AD": '',
       "Hello My Dir": '',
+      "WDS / MDT": '',
+      "SNMP": '',
     },
 
     // Virtualisation
     {
-      "Proxmox": '',
-      "Hyper-V": '',
-      "VMWare": '',
-      "vSphere": '',
-      "Qemu/KVM": '',
+      "Proxmox": 'logos/proxmox.svg',
+      "Hyper-V": 'logos/hyperv.svg',
+      "VMWare": 'logos/vmware.jpg',
+      "vSphere": 'logos/vmware-vsphere.svg',
+      "Qemu/KVM": 'logos/QEMU.png',
     },
     // Cybersécurité
     {
       "OPNSense": 'logos/opnsense.svg',
+      "Stormshield": 'logos/stormshield.jpg',
       "Horodatage": '',
       "Chiffrement": '',
       "Sécurité Réseaux": '',
@@ -79,7 +85,7 @@ const AlexandreProfile = () => {
       "Docker": 'logos/docker.png',
       "Github": 'logos/github.png',
       "Gitlab": 'logos/gitlab.png',
-      "Apache": '',
+      "Apache": 'logos/apache.svg',
     },
     // DPL/Webmarketing
     {
@@ -97,13 +103,71 @@ const AlexandreProfile = () => {
     {
       "Anglais": '',
     },
-  ]
+    // Certifications
+    {
+      "CSNA": '',
+      "FCF Fortinet": '',
+      "PIX": '',
+      "Mooc de l'ANSSI": '',
+    },
 
+    // Linux
+    {
+      "Arch": 'logos/arch.svg',
+      "Fédora": 'logos/fedora.svg',
+      "Ubuntu": 'logos/ubuntu.svg',
+      "Debian": 'logos/debian.svg',
+      "RHEL": 'logos/redhat.svg',
+      "NixOs": 'logos/nixos.svg',
+      "Kali": 'logos/kali.svg',
+      "Alpine": ''
+    },
+
+    // Outils
+    {
+      "Obsidian": 'logos/obsidian.png',
+      "Only office": '',
+      "Suite office": '',
+      "VsCode": '',
+      "IntelliJ": '',
+
+    },
+  ];
+
+  let CertificationDictionnaryList = [
+    "Cybersécurité",
+    "Developpement",
+    "Réseau"
+  ];
+
+  let CertificationDictionnary = [
+    // Cybersécurité
+
+    {
+      "CSNA": '',
+      "Mooc Anssi":'',
+    },
+
+    // Developpement
+    {
+
+    },
+
+    //Réseau
+    {
+      "Cisco": '',
+    },
+  ];
   return (
     <>
     <h1 className="competences-title">Alexandre</h1>
-
+    <h4 className="competences-bold">Résumé</h4>
+    <h5>Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.</h5>
+    <h5>J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack),</h5>
+    <h5>en scripting et automatisation, en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.</h5>
     <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
+    <h2 className='Certifications'>Mes Certifications</h2>
+    <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
     </>
   )
 }
@@ -120,6 +184,8 @@ const ValentinProfile = () => {
     "DPL/Webmarketing",
     "Soft Skills",
     "Langues",
+    "Certifications",
+    "Linux"
   ];
   
   let skillsDictionnary = [
@@ -207,6 +273,46 @@ const ValentinProfile = () => {
       "Anglais": '',
       "Allemand": '',
     },
+    //Certifications
+    {
+      "PIX": '',
+      "Mooc de l'ANSSI": '',
+    },
+
+
+    // Linux
+    {
+      "Arch": '',
+      "Fédora": '',
+      "Ubuntu": '',
+      "Debian": '',
+      "RHEL": '',
+      "Kali": '',
+      "Alpine": ''
+    },
+  ];
+  let CertificationDictionnaryList = [
+    "Cybersécurité",
+    "Developpement",
+    "Réseau"
+  ];
+
+  let CertificationDictionnary = [
+    // Cybersécurité
+
+    {
+      "Mooc Anssi":'',
+    },
+
+    // Developpement
+    {
+
+    },
+
+    //Réseau
+    {
+      "Cisco": '',
+    },
   ];
 
   return (
@@ -225,6 +331,8 @@ const ValentinProfile = () => {
         <h5>Administrateur Systèmes</h5>
         <h4 className="competences-bold">Tableau de compétences</h4>
         <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
+        <h2 className='Certifications'>Mes Certifications</h2>
+        <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
     </>
   )
 }

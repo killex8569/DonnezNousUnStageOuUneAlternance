@@ -161,12 +161,32 @@ const AlexandreProfile = () => {
   return (
     <>
     <h1 className="competences-title">Alexandre</h1>
-    <h4 className="competences-bold">Résumé</h4>
-    <h5>Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.</h5>
-    <h5>J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack),</h5>
-    <h5>en scripting et automatisation, en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.</h5>
+    <div class="container text-center">
+      <div class="row align-items-start mb-5 mt-3">
+        <div class="col">
+        <h4 className="competences-bold">Résumé</h4>
+          <div class="border border-2 rounded-3 p-3">
+          <h5>Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.</h5>
+          <h5>J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack),</h5>
+          <h5>en scripting et automatisation, en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.</h5>
+          </div>
+        </div>
+        <div class="col">
+        <h4 className="competences-bold">Intitulés de postes idéaux</h4>
+          <div class="row">
+            <div class="col-md-3 col-sm-0"></div>
+            <div class="col-md-6 col-sm border border-2 rounded-3 p-3">
+              <h5>Administrateur systèmes/réseaux</h5>
+              <h5>Ingénieur Cybersécurité</h5>
+              <h5>Analyste SOC</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 className="competences-bold">Tableau de compétences</h4>
     <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
-    <h2 className='Certifications'>Mes Certifications</h2>
+    <h4 className="competences-bold mt-5">Mes Certifications</h4>
     <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
     </>
   )
@@ -350,7 +370,7 @@ const ValentinProfile = () => {
         </div>
         <h4 className="competences-bold">Tableau de compétences</h4>
         <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
-        <h2 className='Certifications'>Mes Certifications</h2>
+        <h4 className="competences-bold mt-5">Mes Certifications</h4>
         <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
     </>
   )

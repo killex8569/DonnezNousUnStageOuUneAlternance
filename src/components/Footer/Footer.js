@@ -5,8 +5,8 @@ const Footer = () => (
         <div class="footer-container">
             <div class="footer-row">
                 <div class="footer-col">
-                    <h4>Plan du site</h4>
-                    <ul>
+                    <h4 className="footer-h4">Plan du site</h4>
+                    <ul className="footer-ul">
                         <li><a target="_blank" href="#">Accueil</a></li>
                         <li><a target="_blank" href="#">Nos compétences</a></li>
                         <li><a target="_blank" href="#">Notre parcours</a></li>
@@ -14,23 +14,23 @@ const Footer = () => (
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Ce site est open-source</h4>
-                    <ul>
+                    <h4 className="footer-h4">Ce site est open-source</h4>
+                    <ul className="footer-ul">
                         <li><a target="_blank" href="https://react.dev/">React</a></li>
                         <li><a target="_blank" href="https://nodejs.org/en">Node.js</a></li>
                         <li><a target="_blank" href="https://github.com/killex8569/jeveuxunstageouunealternance">Lien GitHub</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Notre Ecole</h4>
-                    <ul>
+                    <h4 className="footer-h4">Notre Ecole</h4>
+                    <ul className="footer-ul">
                         <li><a target="_blank" href="https://www.cpe.fr/">CPE Lyon</a></li>
                         <li><a target="_blank" href="https://www.leschartreux.com/">Institution des Chartreux</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Nous contacter</h4>
-                    <ul>
+                    <h4 className="footer-h4">Nous contacter</h4>
+                    <ul className="footer-ul">
                         <li><a target="_blank" href="mailto:alexandre.faublanette@gmail.com">alexandre.faublanette@gmail.com</a></li>
                         <li><a target="_blank" href="mailto:valentin.ryckaert@protonmail.com">valentin.ryckaert@protonmail.com</a></li>
                         <li><a target="_blank" href="https://portefolio-y32w.vercel.app/">Portfolio Valentin Ryckaert</a></li>

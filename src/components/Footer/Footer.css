@@ -10,18 +10,17 @@
 
 .footer-row{
 	display: flex;
-	flex-wrap: wrap;
 }
 
-ul{
+.footer-ul {
 	list-style: none;
 }
 
 .footer-col{
-   width: 25%;
+	width: 25%;
 }
 
-.footer-col h4{
+.footer-col .footer-h4{
 	font-size: 18px;
 	color: #ffffff;
 	margin-bottom: 35px;
@@ -31,23 +30,21 @@ ul{
 .footer-col h4::before{
 	content: '';
 	position: absolute;
-	left:0;
 	bottom: -10px;
 	background-color: var(--accent-underline);
 	height: 2px;
-	box-sizing: border-box;
 	width: 50px;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
+	margin-left: -30px;
 	font-size: 16px;
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
 	color: #bbbbbb;
-	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
@@ -68,19 +65,18 @@ ul{
     transition: all 0.5s ease;
 }
 
-.footer-col .social-links span {
+.social-links span {
     margin-right: 7px;
 	vertical-align:text-top;
 }
 
-.footer-col .social-links svg {
+.social-links svg {
     margin-right: 7px;
 	vertical-align:middle;
 	margin-left: 7px;
 }
 
-
-.footer-col .social-links a:hover{
+.social-links a:hover{
 	color: #24262b;
 	background-color: var(--background);
 }

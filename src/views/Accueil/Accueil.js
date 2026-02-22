@@ -116,7 +116,7 @@ function Accueil() {
 
       <section className="accueil-cta-section">
         <h5 className="accueil-cta-intro">Alors n'attendez pas :</h5>
-        <h2 className="accueil-cta-title">EMBAUCHEZ-NOUS SIVOUPLÉ</h2>
+        <h2 className="accueil-cta-title">embauchez-nous, s'il vous plaît !!</h2>
       </section>
       </div>
       

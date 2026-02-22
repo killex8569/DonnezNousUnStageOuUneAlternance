@@ -16,7 +16,7 @@ function Navbar() {
         <Link to="/" onClick={toggleMobileMenu}>Accueil</Link>
         <Link to="/competences" onClick={toggleMobileMenu}>Nos compétences</Link>
         <Link to="/parcours" onClick={toggleMobileMenu}>Notre parcours</Link>
-        <Link to="/apropos" onClick={toggleMobileMenu}>A propos</Link>
+        <Link to="/about" onClick={toggleMobileMenu}>A propos</Link>
       </div>
     );
   };
@@ -32,7 +32,7 @@ function Navbar() {
           <Link to="/" className={ActiveLink === 0 ? "active-link" : ""} onClick={() => { setActiveLink(0) }}>Accueil</Link>
           <Link to="/competences" className={ActiveLink === 1 ? "active-link" : ""} onClick={() => { setActiveLink(1) }}>Nos compétences</Link>
           <Link to="/parcours" className={ActiveLink === 2 ? "active-link" : ""} onClick={() => { setActiveLink(2) }}>Notre parcours</Link>
-          <Link to="/apropos" className={ActiveLink === 3 ? "active-link" : ""} onClick={() => { setActiveLink(3) }}>A propos</Link>
+          <Link to="/about" className={ActiveLink === 3 ? "active-link" : ""} onClick={() => { setActiveLink(3) }}>A propos</Link>
         </div>
 
         {/* This button only shows up on small screens. It is used to open the mobile menu */}

@@ -14,7 +14,6 @@ const AlexandreProfile = () => {
     "DPL/Webmarketing",
     "Soft Skills",
     "Langues",
-    "Certifications",
     "Linux",
     "Outils"
   ];
@@ -103,13 +102,6 @@ const AlexandreProfile = () => {
     {
       "Anglais": '',
     },
-    // Certifications
-    {
-      "CSNA": '',
-      "FCF Fortinet": '',
-      "PIX": '',
-      "Mooc de l'ANSSI": '',
-    },
 
     // Linux
     {
@@ -184,7 +176,6 @@ const ValentinProfile = () => {
     "DPL/Webmarketing",
     "Soft Skills",
     "Langues",
-    "Certifications",
     "Linux"
   ];
   
@@ -272,11 +263,6 @@ const ValentinProfile = () => {
     {
       "Anglais": '',
       "Allemand": '',
-    },
-    //Certifications
-    {
-      "PIX": '',
-      "Mooc de l'ANSSI": '',
     },
 
 

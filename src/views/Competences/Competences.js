@@ -49,11 +49,11 @@ const AlexandreProfile = () => {
       "DHCP": '',
       "Routage": '',
       "VLAN": '',
-      "Cisco": '',
+      "Cisco": 'logos/cisco.png',
       "Switching": '',
       "VLSM/FLSM": '',
       "Supervision": '',
-      "Active Directory": '',
+      "Active Directory": 'logos/AD.jpg',
       "Harden AD": '',
       "Hello My Dir": '',
       "WDS / MDT": '',
@@ -64,9 +64,9 @@ const AlexandreProfile = () => {
     {
       "Proxmox": 'logos/proxmox.svg',
       "Hyper-V": 'logos/hyperv.svg',
-      "VMWare": '',
+      "VMWare": 'logos/vmware.jpg',
       "vSphere": 'logos/vmware-vsphere.svg',
-      "Qemu/KVM": '',
+      "Qemu/KVM": 'logos/QEMU.png',
     },
     // Cybersécurité
     {
@@ -125,7 +125,7 @@ const AlexandreProfile = () => {
 
     // Outils
     {
-      "Obsidian": '',
+      "Obsidian": 'logos/obsidian.png',
       "Only office": '',
       "Suite office": '',
       "VsCode": '',

@@ -11,6 +11,7 @@ function App() {
       <BrowserRouter>
         {/* Navigation */}
         <Navbar/>
+        <title>Notre site</title>
 
         {/* Routes */}
         <Routes>

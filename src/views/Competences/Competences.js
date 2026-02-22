@@ -14,7 +14,8 @@ const AlexandreProfile = () => {
     "DPL/Webmarketing",
     "Soft Skills",
     "Langues",
-    "Certifications"
+    "Certifications",
+    "Linux"
   ];
   let skillsDictionnary = [
     // Web
@@ -107,6 +108,18 @@ const AlexandreProfile = () => {
       "PIX": '',
       "Mooc de l'ANSSI": '',
     },
+
+    // Linux
+    {
+      "Arch": '',
+      "Fédora": '',
+      "Ubuntu": '',
+      "Debian": '',
+      "RHEL": '',
+      "NixOs": '',
+      "Kali": '',
+      "Alpine": ''
+    },
   ];
 
   let CertificationDictionnaryList = [
@@ -136,8 +149,10 @@ const AlexandreProfile = () => {
   return (
     <>
     <h1 className="competences-title">Alexandre</h1>
-
+    <h4 className="competences-bold">Résumé</h4>
+    <h5>Actuellement en 3ème année d'école d'ingénieur à CPE, nous sommes former sur les domaines </h5>
     <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
+    <h2 className='Certifications'>Mes Certifications</h2>
     <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
     </>
   )
@@ -249,6 +264,29 @@ const ValentinProfile = () => {
       "Mooc de l'ANSSI": '',
     },
   ];
+  let CertificationDictionnaryList = [
+    "Cybersécurité",
+    "Developpement",
+    "Réseau"
+  ];
+
+  let CertificationDictionnary = [
+    // Cybersécurité
+
+    {
+      "Mooc Anssi":'',
+    },
+
+    // Developpement
+    {
+
+    },
+
+    //Réseau
+    {
+      "Cisco": '',
+    },
+  ];
 
   return (
     <>
@@ -266,6 +304,8 @@ const ValentinProfile = () => {
         <h5>Administrateur Systèmes</h5>
         <h4 className="competences-bold">Tableau de compétences</h4>
         <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
+        <h2 className='Certifications'>Mes Certifications</h2>
+        <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
     </>
   )
 }

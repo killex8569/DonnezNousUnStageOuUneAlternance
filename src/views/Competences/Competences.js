@@ -61,6 +61,7 @@ const AlexandreProfile = () => {
       "Hyper-V": '',
       "VMWare": '',
       "vSphere": '',
+      "Qemu/KVM": '',
     },
     // Cybersécurité
     {
@@ -113,6 +114,7 @@ const ValentinProfile = () => {
     "Programmation",
     "Base de données",
     "Système/Réseau",
+    "Virtualisation",
     "Cybersécurité",
     "DevOps",
     "DPL/Webmarketing",
@@ -162,6 +164,13 @@ const ValentinProfile = () => {
       "DNS": '',
       "DHCP": '',
       "Routage": '',
+    },
+
+    // Virtualisation
+    {
+      "VMWare": '',
+      "vSphere": '',
+      "Qemu/KVM": '',
     },
     // Cybersécurité
     {

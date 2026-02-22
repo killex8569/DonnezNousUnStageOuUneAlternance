@@ -1,37 +1,43 @@
-.container {
+.accueil-container {
   padding: 40px 20px;
+  color: var(--text-color-dark);
 }
 
 /* Section Profils */
-.main-title {
+.accueil-main-title {
   color: var(--text-red);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
 }
 
-.inline-center {
+.accueil-inline-center {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.profile-item {
+.accueil-profile-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-inline: 30px;
+
 }
 
-.placeholder-square {
+.accueil-profile-item h4 {
+  margin-top: 20px;
+}
+
+.accueil-placeholder-square {
   background-color: var(--placeholder-gray);
   width: 300px;
   height: 320px;
-  margin-inline: 70px;
 }
 
-/* Boite centrale info (CPE Lyon...) */
-.central-info-box {
+/* Boite centrale info */
+.accueil-central-info-box {
   padding: 30px;
   border-radius: 20px;
   text-align: center;
@@ -41,7 +47,7 @@
 }
 
 /* Cartes (Features) */
-.feature-card {
+.accueil-feature-card {
   background-color: var(--bg-primary);
   margin-block: 50px;
   border-radius: 20px;
@@ -53,16 +59,16 @@
 }
 
 @media screen and (min-width: 800px) {
-  .feature-card {
+  .accueil-feature-card {
     margin-inline: 90px;
   }
 }
 
-.feature-card.reverse {
+.accueil-feature-card.reverse {
   flex-direction: row-reverse; /* Inverse l'ordre pour l'image à gauche */
 }
 
-.text-content {
+.accueil-text-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -70,22 +76,22 @@
   text-align: center;
 }
 
-.placeholder-square.large {
+.accueil-placeholder-square.accueil-large {
   width: 140px;
   height: 160px;
 }
 
 /* CTA */
-.cta-section {
+.accueil-cta-section {
   text-align: center;
 }
 
-.cta-intro {
+.accueil-cta-intro {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.cta-title {
+.accueil-cta-title {
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;

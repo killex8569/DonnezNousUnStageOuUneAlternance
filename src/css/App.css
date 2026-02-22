@@ -1,8 +1,8 @@
 :root {
-    --text-red: #8d3828;      /* Le texte rouge/rose */
+    --text-red: #b2452f;      /* Le texte rouge/rose */
     --placeholder-gray: #D9D9D9;
     --accent-primary: #4a6b4b; /* Le vert mousse du header/footer */
-    --bg-primary: #F2EFE4;      /* Le fond des cartes */
+    --bg-primary: #f4efe1;      /* Le fond des cartes */
     --accent-secondary: #ffffff80;
     --text-color-dark: #4A4A4A;
     --text-color-light: #f2f2f2;

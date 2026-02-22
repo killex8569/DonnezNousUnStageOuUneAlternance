@@ -1,79 +1,125 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import './Accueil.css';
 
-// Composant réutilisable pour les cartes (Compétents, Motivés, Travailleurs)
-const FeatureCard = ({ title, content, reverse }) => (
-  <div className={`feature-card ${reverse ? 'reverse' : ''}`}>
-    <div className="text-content">
-      <h2>{title}</h2>
-      {content.map((line, index) => (
-          <p key={index}>{line}</p>
-      ))}
-    </div>
-    <div className="placeholder-square">photo convaincante</div>
-  </div>
-);
 
 function Accueil() {
   return (
-    <div className="App">
-      
-      <div className="container">
-      <section className="profile-section">
-        <h1 className="main-title">
-          DONNEZ NOUS UN STAGE OU UNE ALTERNANCE SIVOUPLÉ
-        </h1>
-
-        <div className="inline-center">
-          <div className="profile-item">
+    <>
+      <div className="accueil-container">
+      <section className="accueil-profile-section">
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            'donnez nous un stage ou une alternance s\'il vous plaît',
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            'donnez nous un stage ou une alternance sivouplé',
+            1000,
+            'donnez nous un stage ou une alternance par pitié',
+            1000,
+            'donnez nous un stage ou une alternance on vous en suplie',
+            1000
+          ]}
+          wrapper="h1"
+          speed={50}
+          repeat={Infinity}
+          className="accueil-main-title"
+        />
+        <div className="accueil-inline-center">
+          <div className="accueil-profile-item">
             <img src="valentin.jpg" alt="Photo Valentin Ryckaert" style={{height: 320}}/>
-            <h2>Valentin Ryckaert</h2>
+            <h3>Valentin Ryckaert</h3>
+            <h5 style={{color: "red"}}>n'a pas encore de stage</h5>
+            <h5 style={{color: "red"}}>n'a pas encore d'alternance</h5>
           </div>        
-          <div className="profile-item">
-            <div className="placeholder-square">Alexandre</div>
-            <h2>Alexandre Faubladier--Anette</h2>
+          <div className="accueil-profile-item">
+            <div className="accueil-placeholder-square">Alexandre</div>
+            <h3>Alexandre F. Anette</h3>
+            <h5 style={{color: "red"}}>n'a pas encore de stage</h5>
+            <h5 style={{color: "red"}}>n'a pas encore d'alternance</h5>
           </div>
         </div>
-        <br/><br/>
 
         {/* Texte central */}
-        <div className="inline-center feature-card">
+        <div className="accueil-inline-center accueil-feature-card">
           <img src="cpe-lyon.jpg" alt="CPE Lyon" style={{width: 400}}/>
-          <div className="central-info-box">
-            <h3>A l'école CPE LYON</h3>
-            <h3>A la recherche d'un stage du X</h3>
-            <h3>au Y et d'une alternance...</h3>
+          <div className="accueil-central-info-box">
+            <h3>A l'école d'ingénieur CPE LYON</h3>
+            <br/>
+            <h4>A la recherche d'un stage de préférence à l'étranger du 8 juin au 26 août 2026</h4>
+            <h4>et d'une alternance de 2 ans à partir de septembre 2026</h4>
+            <br/>
+            <h5>Nous ne souhaitons pas particulièrement être embauchés ensemble, mais nous serions ravi si cela pouvait être le cas. Nous avons déjà l'habitude de travailler sur des projets communs.</h5>
           </div>
           <img src="logo-chartreux.png" alt="Chartreux" style={{width: 400}}/>
         </div>
       </section>
-        
+
         {/* Carte 1 : Image à droite (standard) */}
-        <FeatureCard 
-          title="Nous sommes compétents !!" 
-          content={["coucou"]} 
-        />
+        <div className="accueil-feature-card">
+          <div className="accueil-text-content">
+            <h2>Nous sommes compétents !!</h2>
+            <div className="accueil-inline-center">
+                <div className="accueil-profile-item">
+                  <h4>Valentin</h4>
+                  <h5>Développement web, logiciel et mobile</h5>
+                  <h5>Infrastructures logicielles (Apache, Docker...)</h5>
+                  <h5>Sécurité applicative</h5>
+                  <h5>Scripting</h5>
+                  <h5>Maîtrise de Linux</h5>
+                </div>
+                <div className="accueil-profile-item">
+                  <h4>Alexandre</h4>
+                  <h5>mise en place d'infrastructures réseaux</h5>
+                  <h5>Infrastructures physiques et logicielles</h5>
+                  <h5>Sécurité des réseaux</h5>
+                  <h5>Maîtrise de Linux</h5>
+                </div>
+            </div>
+          </div>
+            <div className="accueil-placeholder-square">photo convaincante</div>
+        </div>
 
         {/* Carte 2 : Image à gauche (reverse) */}
-        <FeatureCard 
-          title="Nous sommes motivés !!" 
-          content={["coucou"]} 
-          reverse={true}
-        />
+        <div className="accueil-feature-card reverse">
+          <div className="accueil-text-content">
+            <h2>Nous sommes motivés !!</h2>
+            <div className="accueil-inline-center">
+              <div className="accueil-profile-item">
+                <h4>Nous travaillons ensemble sur différents projets en dehors de nos cours :</h4>
+                <h5>Europeanize Yourself! : Document listant les alternatives européennes aux outils digitaux américains et asiatiques</h5>
+                <h5>L'algo en 27 exos : des exercices pour apprendre l'algorithmie</h5>
+                <h5>Kosmoz : Une application permettant de découvrir notre galaxie et l'Univers (Vue.js)</h5>
+                <h5>DonnezNousUnStageOuUneAlternance : Ce site que vous consultez !</h5>
+              </div>
+            </div>
+          </div>
+            <div className="accueil-placeholder-square">photo convaincante</div>
+        </div>
 
         {/* Carte 3 : Image à droite (standard) */}
-        <FeatureCard 
-          title="Nous sommes travailleurs !!" 
-          content={["coucou"]} 
-        />
+        <div className="accueil-feature-card">
+          <div className="accueil-text-content">
+            <h2>Nous sommes travailleurs !!</h2>
+            <div className="accueil-inline-center">
+              <div className="accueil-profile-item">
+                <h4>Nous avons à coeur de donner le meilleur de nous même dans chacune de nos missions</h4>
+                <h5>Notre école CPE Lyon, ainsi que son partenaire l'Institution des Chartreux, sont des écoles réputées pour leur exigence.</h5>
+                <h5>Nous avons l'habitude de travailler très régulièrement, et l'informatique fait partie de notre quotidien.</h5>
+                <h5>Nous avons notamment chacun un HomeLab que nous entretenons et faisons grandir régulièrement.</h5>
+              </div>
+            </div>
+          </div>
+            <div className="accueil-placeholder-square">photo convaincante</div>
+        </div>
 
-      <section className="cta-section">
-        <p className="cta-intro">Alors n'attendez pas :</p>
-        <h2 className="cta-title">EMBAUCHEZ-NOUS SIVOUPLÉ</h2>
+      <section className="accueil-cta-section">
+        <h5 className="accueil-cta-intro">Alors n'attendez pas :</h5>
+        <h2 className="accueil-cta-title">EMBAUCHEZ-NOUS SIVOUPLÉ</h2>
       </section>
       </div>
       
-    </div>
+    </>
   );
 }
 

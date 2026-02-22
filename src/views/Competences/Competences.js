@@ -15,7 +15,8 @@ const AlexandreProfile = () => {
     "Soft Skills",
     "Langues",
     "Certifications",
-    "Linux"
+    "Linux",
+    "Outils"
   ];
   let skillsDictionnary = [
     // Web
@@ -119,6 +120,16 @@ const AlexandreProfile = () => {
       "NixOs": '',
       "Kali": '',
       "Alpine": ''
+    },
+
+    // Outils
+    {
+      "Obsidian": '',
+      "Only office": '',
+      "Suite office": '',
+      "VsCode": '',
+      "IntelliJ": '',
+      
     },
   ];
 
@@ -277,7 +288,6 @@ const ValentinProfile = () => {
       "Ubuntu": '',
       "Debian": '',
       "RHEL": '',
-      "NixOs": '',
       "Kali": '',
       "Alpine": ''
     },

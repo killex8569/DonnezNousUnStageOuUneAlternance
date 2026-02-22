@@ -49,7 +49,7 @@ function Accueil() {
             <h4>A la recherche d'un stage de préférence à l'étranger du 8 juin au 26 août 2026</h4>
             <h4>et d'une alternance de 2 ans à partir de septembre 2026</h4>
             <br/>
-            <h5>Nous ne souhaitons pas particulièrement être embauchés ensemble, mais nous serions ravi si cela pouvait être le cas. Nous avons déjà l'habitude de travailler sur des projets communs.</h5>
+            <h5>Nous ne souhaitons pas particulièrement être embauchés ensemble, mais <strong> nous serions ravi si cela pouvait être le cas</strong>. Nous avons déjà l'habitude de travailler sur des projets communs.</h5>
           </div>
           <img src="logo-chartreux.png" alt="Chartreux" style={{width: 400}}/>
         </div>
@@ -73,6 +73,7 @@ function Accueil() {
                   <h5>mise en place d'infrastructures réseaux</h5>
                   <h5>Infrastructures physiques et logicielles</h5>
                   <h5>Sécurité des réseaux</h5>
+                  <h5>Scripting</h5>
                   <h5>Maîtrise de Linux</h5>
                 </div>
             </div>
@@ -87,10 +88,10 @@ function Accueil() {
             <div className="accueil-inline-center">
               <div className="accueil-profile-item">
                 <h4>Nous travaillons ensemble sur différents projets en dehors de nos cours :</h4>
-                <h5>Europeanize Yourself! : Document listant les alternatives européennes aux outils digitaux américains et asiatiques</h5>
-                <h5>L'algo en 27 exos : des exercices pour apprendre l'algorithmie</h5>
-                <h5>Kosmoz : Une application permettant de découvrir notre galaxie et l'Univers (Vue.js)</h5>
-                <h5>DonnezNousUnStageOuUneAlternance : Ce site que vous consultez !</h5>
+                <h5><strong>Europeanize Yourself! </strong>: Document listant les alternatives européennes aux outils digitaux américains et asiatiques</h5>
+                <h5><strong>L'algo en 27 exos </strong>: des exercices pour apprendre l'algorithmie</h5>
+                <h5><strong>Kosmoz </strong>: Une application permettant de découvrir notre galaxie et l'Univers (Vue.js)</h5>
+                <h5><strong>DonnezNousUnStageOuUneAlternance </strong>: Ce site que vous consultez !</h5>
               </div>
             </div>
           </div>

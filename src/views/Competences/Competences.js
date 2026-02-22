@@ -38,7 +38,7 @@ const AlexandreProfile = () => {
     {
       "MariaDB": 'logos/mariadb.png',
       "PostgreSQL": 'logos/postgresql.png',
-      "MySQL": ''
+      "MySQL": 'logos/mysql.svg'
     },
     // Système/Réseau
     {
@@ -62,15 +62,16 @@ const AlexandreProfile = () => {
 
     // Virtualisation
     {
-      "Proxmox": '',
-      "Hyper-V": '',
+      "Proxmox": 'logos/proxmox.svg',
+      "Hyper-V": 'logos/hyperv.svg',
       "VMWare": '',
-      "vSphere": '',
+      "vSphere": 'logos/vmware-vsphere.svg',
       "Qemu/KVM": '',
     },
     // Cybersécurité
     {
       "OPNSense": 'logos/opnsense.svg',
+      "Stormshield": 'logos/stormshield.jpg',
       "Horodatage": '',
       "Chiffrement": '',
       "Sécurité Réseaux": '',
@@ -84,7 +85,7 @@ const AlexandreProfile = () => {
       "Docker": 'logos/docker.png',
       "Github": 'logos/github.png',
       "Gitlab": 'logos/gitlab.png',
-      "Apache": '',
+      "Apache": 'logos/apache.svg',
     },
     // DPL/Webmarketing
     {
@@ -112,13 +113,13 @@ const AlexandreProfile = () => {
 
     // Linux
     {
-      "Arch": '',
-      "Fédora": '',
-      "Ubuntu": '',
-      "Debian": '',
-      "RHEL": '',
-      "NixOs": '',
-      "Kali": '',
+      "Arch": 'logos/arch.svg',
+      "Fédora": 'logos/fedora.svg',
+      "Ubuntu": 'logos/ubuntu.svg',
+      "Debian": 'logos/debian.svg',
+      "RHEL": 'logos/redhat.svg',
+      "NixOs": 'logos/nixos.svg',
+      "Kali": 'logos/kali.svg',
       "Alpine": ''
     },
 

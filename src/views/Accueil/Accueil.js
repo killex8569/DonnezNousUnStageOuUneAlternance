@@ -26,7 +26,7 @@ function Accueil() {
           className="accueil-main-title"
         />
 
-        <div className="accueil-inline-center text-center">
+        <div className="accueil-inline-center">
           <div className="accueil-profile-item">
             <img src="valentin.jpg" alt="Photo Valentin Ryckaert" className="accueil-img" style={{height: 320}}/>
             <h3>Valentin Ryckaert</h3>

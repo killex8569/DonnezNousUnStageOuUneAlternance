@@ -13,7 +13,7 @@ function Navbar() {
     return (
       <div className='mobile-menu'>
         {/* Because here isShown = true, calling toogleMobileMenu sets isShown to false in every case */}
-        <Link to="/" onClick={toggleMobileMenu}>Accueil</Link>
+        <Link to="/" onClick={toggleMobileMenu}>ACCUEIL</Link>
         <Link to="/competences" onClick={toggleMobileMenu}>Nos compétences</Link>
         <Link to="/parcours" onClick={toggleMobileMenu}>Notre parcours</Link>
         <Link to="/apropos" onClick={toggleMobileMenu}>A propos</Link>

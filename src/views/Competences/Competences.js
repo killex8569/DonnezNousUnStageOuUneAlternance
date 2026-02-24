@@ -2,6 +2,45 @@ import React, { useState } from 'react';
 import CompetencesTable from '../../components/CompetencesTable/ComptencesTable';
 import './Competences.css';
 
+// Composants pour le contenu gauche et droit du Switch
+const LeftContent = ({ children }) => <>{children}</>;
+const RightContent = ({ children }) => <>{children}</>;
+
+const Switch = ({ leftTitle, rightTitle, children }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleSwitch = () => {
+    setIsActive(!isActive);
+  };
+
+  // Filtrer les enfants pour trouver LeftContent et RightContent
+  const leftContent = React.Children.toArray(children).find(child => child.type === LeftContent);
+  const rightContent = React.Children.toArray(children).find(child => child.type === RightContent);
+
+  return (
+    <div className="competences-container">
+      {/* Switch */}
+      <div className="competences-switch-container">
+        <label className={!isActive ? 'competences-label competences-active-label' : 'competences-label'}>
+          {leftTitle}
+        </label>
+        <div className={`competences-switch ${isActive ? 'active' : ''}`} onClick={toggleSwitch}>
+          <div className="competences-switch-toggle"></div>
+        </div>
+        <label className={isActive ? 'competences-label competences-active-label' : 'competences-label'}>
+          {rightTitle}
+        </label>
+      </div>
+
+      {/* Contenu */}
+      <div className="competences-profile-container">
+        {!isActive ? leftContent : null}
+        {isActive ? rightContent : null}
+      </div>
+    </div>
+  );
+};
+
 const AlexandreProfile = () => {
   let skillFamilyList = [
     "Web",
@@ -17,6 +56,7 @@ const AlexandreProfile = () => {
     "Linux",
     "Outils"
   ];
+
   let skillsDictionnary = [
     // Web
     {
@@ -58,7 +98,6 @@ const AlexandreProfile = () => {
       "WDS / MDT": '',
       "SNMP": '',
     },
-
     // Virtualisation
     {
       "Proxmox": 'logos/proxmox.svg',
@@ -77,7 +116,6 @@ const AlexandreProfile = () => {
       "Sécurité applicative": '',
       "Bonnes pratiques cyber": '',
       "Labtainers": '',
-
     },
     // DevOps
     {
@@ -102,7 +140,10 @@ const AlexandreProfile = () => {
     {
       "Anglais": '',
     },
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev-val
     // Linux
     {
       "Arch": 'logos/arch.svg',
@@ -114,7 +155,6 @@ const AlexandreProfile = () => {
       "Kali": 'logos/kali.svg',
       "Alpine": ''
     },
-
     // Outils
     {
       "Obsidian": 'logos/obsidian.png',
@@ -122,7 +162,6 @@ const AlexandreProfile = () => {
       "Suite office": '',
       "VsCode": '',
       "IntelliJ": '',
-
     },
   ];
 
@@ -134,55 +173,57 @@ const AlexandreProfile = () => {
 
   let CertificationDictionnary = [
     // Cybersécurité
-
     {
       "CSNA": '',
       "Mooc Anssi":'',
     },
-
     // Developpement
-    {
-
-    },
-
+    {},
     //Réseau
     {
       "Cisco": '',
     },
   ];
+
   return (
     <>
-    <h1 className="competences-title">Alexandre</h1>
-    <div class="container text-center">
-      <div class="row align-items-start mb-5 mt-3">
-        <div class="col">
-        <h4 className="competences-bold">Résumé</h4>
-          <div class="border border-2 rounded-3 p-3">
-          <h5>Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.</h5>
-          <h5>J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack),</h5>
-          <h5>en scripting et automatisation, en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.</h5>
+      <h1 className="competences-title">Alexandre</h1>
+      <div className="container text-center">
+        <div className="row align-items-start mb-5 mt-3">
+          <div className="col">
+            <h4 className="competences-bold">Résumé</h4>
+            <div className="border border-2 rounded-3 p-3">
+              <h5>Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.</h5>
+              <h5>J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack),</h5>
+              <h5>en scripting et automatisation, en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.</h5>
+            </div>
           </div>
-        </div>
-        <div class="col">
-        <h4 className="competences-bold">Intitulés de postes idéaux</h4>
-          <div class="row">
-            <div class="col-md-3 col-sm-0"></div>
-            <div class="col-md-6 col-sm border border-2 rounded-3 p-3">
-              <h5>Administrateur systèmes/réseaux</h5>
-              <h5>Ingénieur Cybersécurité</h5>
-              <h5>Analyste SOC</h5>
+          <div className="col">
+            <h4 className="competences-bold">Intitulés de postes idéaux</h4>
+            <div className="row">
+              <div className="col-md-3 col-sm-0"></div>
+              <div className="col-md-6 col-sm border border-2 rounded-3 p-3">
+                <h5>Administrateur systèmes/réseaux</h5>
+                <h5>Ingénieur Cybersécurité</h5>
+                <h5>Analyste SOC</h5>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <h4 className="competences-bold">Tableau de compétences</h4>
-    <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
-    <h4 className="competences-bold mt-5">Mes Certifications</h4>
-    <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
+      <Switch leftTitle={"Compétences"} rightTitle={"Certifications"}>
+        <LeftContent>
+          <h4 className="competences-bold">Tableau de compétences</h4>
+          <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary} />
+        </LeftContent>
+        <RightContent>
+          <h4 className="competences-bold mt-5">Mes Certifications</h4>
+          <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary} />
+        </RightContent>
+      </Switch>
     </>
-  )
-}
+  );
+};
 
 const ValentinProfile = () => {
   let skillFamilyList = [
@@ -198,7 +239,7 @@ const ValentinProfile = () => {
     "Langues",
     "Linux"
   ];
-  
+
   let skillsDictionnary = [
     // Web
     {
@@ -246,7 +287,6 @@ const ValentinProfile = () => {
       "Switching": '',
       "VLSM/FLSM": ''
     },
-
     // Virtualisation
     {
       "VMWare": '',
@@ -288,8 +328,6 @@ const ValentinProfile = () => {
       "Anglais": '',
       "Allemand": '',
     },
-
-
     // Linux
     {
       "Arch": '',
@@ -301,91 +339,92 @@ const ValentinProfile = () => {
       "Alpine": ''
     },
   ];
+
   let CertificationDictionnaryList = [
     "Cybersécurité",
-    "Developpement",
-    "Réseau"
+    "Développement",
+    "Systèmes",
+    "Divers"
   ];
 
   let CertificationDictionnary = [
     // Cybersécurité
-
     {
-      "Mooc Anssi":'',
+      "MOOC cybersécurité (ANSSI)": ['certifs/val-anssi.png', "sécurité des mots de passe, sécurité physique,preuve informatique,bonnes pratiques cyber"],
+      "Fortinet Certified Fundamentals in Cybersecurity (Fortinet)": ['certifs/val-FCF.png', "Cybersécurité, Pare-feux, Threat Intelligence, Sécurité applicative, Administration réseaux"],
     },
-
     // Developpement
     {
-
+      "Professional Vue.js Developper (W3School)": ["certifs/val-vue.png", "Vue.js"],
+      "Professional Python Developper (W3School)": ["certifs/val-python.png", "Python, MySQL avec Python, MongoDB avec Python"],
+      "Backend development and APIs (FreeCodeCamp)": ["certifs/val-backend.png", "Node.js, Express.js, MongoDB"]
     },
-
-    //Réseau
+    // Systèmes
     {
-      "Cisco": '',
+      "Red Hat System Administration I et II (RH124/134 - RHA) - Ver. 9.3": ["certifs/val-redhat.png", "Linux, RedHat Entreprise Linux (RHEL)"],
+      "Description des concpets du Cloud (Microsoft Learn)": ["certifs/val-cloud.jpg", "Concepts du cloud computing"]
+    },
+    // Divers
+    {
+      "Open Source Technical Documentation Essentials (Linux Fondation)": ["certifs/val-osdoc.png", "Documentation d'API', Documentation Open-Source"],
+      "Faire Face Ensemble (SGDSN)": ["certifs/val-vigipirate.jpg", "Sécurité citoyenne"]
     },
   ];
 
   return (
     <>
-        <h1 className="competences-title">Valentin</h1>
-        <div class="container text-center">
-          <div class="row align-items-start mb-5 mt-3">
-            <div class="col">
+      <h1 className="competences-title">Valentin</h1>
+      <div className="container text-center">
+        <div className="row align-items-start mb-5 mt-3">
+          <div className="col">
             <h4 className="competences-bold">Résumé</h4>
-              <div class="border border-2 rounded-3 p-3">
-                <h5>Durant ma formation, j'ai pu acquérir des bonnes connaissances en développement, notamment en développement web.</h5>
-                <h5>J'ai pu aussi approfondir mes connaissances en infrastructure logicielle, avec des outils comme Docker, Apache, Nginx, CasaOS, Qemu/KVM etc...</h5>
-                <h5>Par ailleurs, j'utilise Linux quotidiennement, en tant que système d'exploitation principal.</h5>
-              </div>
+            <div className="p-3 competences-border">
+              <h5>Durant ma formation, j'ai pu acquérir des bonnes connaissances en développement, notamment en développement web.</h5>
+              <h5>J'ai pu aussi approfondir mes connaissances en infrastructure logicielle, avec des outils comme Docker, Apache, Nginx, CasaOS, Qemu/KVM etc...</h5>
+              <h5>Par ailleurs, j'utilise Linux quotidiennement, en tant que système d'exploitation principal.</h5>
             </div>
-            <div class="col">
+          </div>
+          <div className="col">
             <h4 className="competences-bold">Intitulés de postes idéaux</h4>
-              <div class="row">
-                <div class="col-md-3 col-sm-0"></div>
-                <div class="col-md-6 col-sm border border-2 rounded-3 p-3">
-                  <h5>Développeur web full-stack</h5>
-                  <h5>Développeur logiciel</h5>
-                  <h5>Concepteur développeur</h5>
-                  <h5>Ingénieur Cybersécurité</h5>
-                  <h5>Ingénieur DevOps</h5>
-                  <h5>Administrateur Systèmes</h5>
-                </div>
+            <div className="row">
+              <div className="col-md-3 col-sm-0"></div>
+              <div className="col-md-6 col-sm p-3 competences-border">
+                <h5>Développeur web full-stack</h5>
+                <h5>Développeur logiciel</h5>
+                <h5>Concepteur développeur</h5>
+                <h5>Ingénieur Cybersécurité</h5>
+                <h5>Ingénieur DevOps</h5>
+                <h5>Administrateur Systèmes</h5>
               </div>
             </div>
           </div>
         </div>
-        <h4 className="competences-bold">Tableau de compétences</h4>
-        <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary}/>
-        <h4 className="competences-bold mt-5">Mes Certifications</h4>
-        <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary}/>
+      </div>
+      <Switch leftTitle={"Compétences"} rightTitle={"Certifications"}>
+        <LeftContent>
+          <h4 className="competences-bold">Tableau de compétences</h4>
+          <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary} forCertifs={false} />
+        </LeftContent>
+        <RightContent>
+          <h4 className="competences-bold mt-5">Mes Certifications</h4>
+          <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary} forCertifs={true} />
+        </RightContent>
+      </Switch>
     </>
-  )
-}
+  );
+};
 
 const Competences = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleSwitch = () => {
-    setIsActive(!isActive);
-  };
 
   return (
-    <div className="competences-container">  
-      {/* Switch */}
-      <div className="competences-switch-container">
-        <label className={!isActive ? 'competences-label competences-active-label' : 'competences-label'}>Valentin</label>
-        <div className={`competences-switch ${isActive ? 'active' : ''}`} onClick={toggleSwitch}>
-          <div className="competences-switch-toggle"></div>
-        </div>
-        <label className={isActive ? 'competences-label competences-active-label' : 'competences-label'}>Alexandre</label>
-      </div>
-
-      {/* Titres */}
-      <div className="competences-profile-container">
-        {!isActive ? <ValentinProfile/> : null}
-        {isActive ? <AlexandreProfile/> : null}
-      </div>
-    </div>
+    <Switch leftTitle={"Valentin"} rightTitle={"Alexandre"}>
+      <LeftContent>
+        <ValentinProfile/>
+      </LeftContent>
+      <RightContent>
+        <AlexandreProfile/>
+      </RightContent>
+    </Switch>
   );
 };
 

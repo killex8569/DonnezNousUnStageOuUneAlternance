@@ -1,7 +1,8 @@
 .topnav {
+    z-index: 7;
     height: 70px;
     padding: 0px 20px;
-    background:var(--accent-primary);
+    background:var(--color-secondary);
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -30,7 +31,7 @@
   text-align: center;
   align-items: center;
   margin: 0 20px;
-  color: var(--text-color-light);
+  color: var(--color-text-light);
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
@@ -43,7 +44,7 @@
   bottom: -5px; /* Adjust as necessary for spacing */
   width: 100%; /* Full width for the underline */
   height: 3px; /* Thickness of the underline */
-  background-color: var(--accent-underline); /* Color for the underline */
+  background-color: var(--color-accent); /* Color for the underline */
   transform: scaleX(0); /* Hide by scaling down */
   transition: transform 0.3s ease; /* Smooth transition */
 }
@@ -61,7 +62,7 @@
   border: none;
   background: transparent;
   font-size: 36px;
-  color: var(--text-color-light);
+  color: var(--color-text-light);
   cursor: pointer;
 }
 
@@ -78,7 +79,7 @@
   border: none;
   background: transparent;
   font-size: 50px;
-  color: var(--text-color-light);
+  color: var(--color-text-light);
   cursor: pointer;
 }
 

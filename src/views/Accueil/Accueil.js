@@ -76,11 +76,13 @@ function Accueil() {
           <a target="_blank" href="mailto:valentin.ryckaert@protonmail.com" className="accueil-profile-card">
             <article>
               <img
-                src="valentin.jpg"
+                src="valentin.png"
                 alt="Photo Valentin Ryckaert"
                 className="accueil-profile-card__image"
               />
               <h3 className="accueil-profile-card__name">Valentin Ryckaert</h3>
+              <h5 className="accueil-profile-card__subtitle">Ingénieur Web/Logiciel</h5>
+              <br/>
               <div className="accueil-profile-card__status">
                 <span>❌ cherche désespérément un stage</span>
                 <span>❌ cherche désespérément une alternance</span>
@@ -91,11 +93,12 @@ function Accueil() {
           <a target="_blank" href="mailto:valentin.ryckaert@protonmail.com" className="accueil-profile-card">
             <article>
               <img
-                src="Alexandre.jpg"
+                src="Alexandre.png"
                 alt="Photo Alexandre FA"
                 className="accueil-profile-card__image"
               />
               <h3 className="accueil-profile-card__name">Alexandre F. Anette</h3>
+              <h5 className="accueil-profile-card__subtitle">Ingénieur Systèmes/Réseaux</h5>
               <div className="accueil-profile-card__status">
                 <span>❌ cherche désespérément un stage</span>
                 <span>❌ cherche désespérément une alternance</span>

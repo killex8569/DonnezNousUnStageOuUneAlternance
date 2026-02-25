@@ -9,11 +9,23 @@
 }
 
 .footer-row{
-	display: flex;
+	display:block;
+	margin-left: 10%;
 }
 
 .footer-ul {
 	list-style: none;
+	margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1206px) {
+	.footer-row{
+		display: flex;
+		margin-left: 0%;
+	}
+	.footer-ul {
+		margin-bottom: 0px;
+	}
 }
 
 .footer-col{

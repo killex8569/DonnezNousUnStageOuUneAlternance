@@ -121,6 +121,13 @@
     object-fit: cover;
     border-radius: var(--radius-sm);
     margin-bottom: var(--spacing-md);
+    background-color: #e9e4d8;
+  }
+
+  .accueil-profile-card__subtitle {
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
   }
   
   .accueil-profile-card__name {

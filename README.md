@@ -11,32 +11,9 @@
 - Page : 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# COMPILE OK
-
-
-
-
-
-
+# Reste encore à finir
+- Ajouter nos CV dans About
+- Mettre les certifications (Alexandre)
+- Continuer et finir la timeline
 
 

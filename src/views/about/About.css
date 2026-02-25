@@ -79,6 +79,7 @@
   .about-stack-content {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: var(--spacing-lg);
     gap: var(--spacing-lg);
   }
   

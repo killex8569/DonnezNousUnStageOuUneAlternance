@@ -164,20 +164,31 @@ const AlexandreProfile = () => {
   let CertificationDictionnaryList = [
     "Cybersécurité",
     "Developpement",
-    "Réseau"
+    "Réseau",
+    "Systèmes",
+    "Divers"
   ];
 
   let CertificationDictionnary = [
     // Cybersécurité
     {
-      "CSNA": '',
-      "Mooc Anssi":'',
+      "CSNA": ["certifs/alex-csna.png", "Firewalling, réseau, NAT, VPN, zéro trust, IPSEC"],
+      "Mooc Anssi": ["certifs/alex-anssi.png", "Base de la cybersécurité"],
+      "FCF Fortinet": ["certifs/alex-fcf.png", "Base du réseau, base du firewalling"]
     },
     // Developpement
     {},
     //Réseau
     {
       "Cisco": '',
+    },
+    // Systèmes
+    {
+      "Redhat": ["certifs/alex-redhat.png", "Linux, RedHat Entreprise Linux (RHEL)"]
+    },
+    // Divers
+    {
+
     },
   ];
 
@@ -214,7 +225,7 @@ const AlexandreProfile = () => {
         </LeftContent>
         <RightContent>
           <h4 className="competences-bold mt-5">Mes Certifications</h4>
-          <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary} />
+          <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary} forCertifs={true}/>
         </RightContent>
       </Switch>
     </>

@@ -88,7 +88,7 @@ function Accueil() {
             </article>
           </a>
 
-          <a target="_blank" href="mailto:alexandre.faublanette@gmail.com" className="accueil-profile-card">
+          <a target="_blank" href="mailto:valentin.ryckaert@protonmail.com" className="accueil-profile-card">
             <article>
               <img
                 src="Alexandre.jpg"
@@ -160,7 +160,7 @@ function Accueil() {
           </div>
         </div>
         <div className="accueil-feature__image">
-          <span>💪 Prêts à coder</span>
+        <img src="nous_sommes_competents.jpg" alt="Nous sommes compétents"/>
         </div>
       </section>
 
@@ -182,7 +182,7 @@ function Accueil() {
           </ul>
         </div>
         <div className="accueil-feature__image">
-          <span>🔥 Passion informatique</span>
+        <img src="nous_sommes_motives.jpg" alt="nous sommes motivés"/>
         </div>
       </section>
 

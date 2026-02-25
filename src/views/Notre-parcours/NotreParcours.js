@@ -12,24 +12,27 @@ function NotreParcours() {
     },
     {
       id: 2,
-      title: "MVP",
-      date: "Mars 2025",
-      description: "Première version en production."
+      title: "Institution des Chartreux",
+      date: "2023 - 2024",
+      description: "Formation en BTS SIO option SISR (Réseau)."
     },
     {
       id: 3,
-      title: "Version 2.0",
-      date: "Juin 2025",
-      description: "DAMn"
+      title: "Stage en première année de BTS",
+      date: "Juin - Juillet 2024",
+      description: "Stagiaire chez Advolis Orfis"
     },
     {
       id: 4,
-      title: "Test",
-      date: "Juin 2025",
-      description: "test"
+      title: "Stage en deuxième année de BTS",
+      date: "Mars - Avril 2025",
+      description: "Stagiaire chez Advolis Orfis"
     },
     {
       id: 5,
+      title: "Formation d'ingénieur à CPE Lyon",
+      date: "2025 - 2026",
+      description: "Formation d'ingnéieur en Cybersécurité"
     },
   ];
 

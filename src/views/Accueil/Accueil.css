@@ -269,9 +269,8 @@
   
   .accueil-feature__image {
     width: 100%;
-    max-width: 380px;
-    height: 320px;
-    background-color: var(--color-bg-gray);
+    max-width: 400px;
+    height: 460px;
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;

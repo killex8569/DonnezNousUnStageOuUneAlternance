@@ -116,12 +116,17 @@
   }
   
   .accueil-profile-card__image {
-    width: 100%;
     height: 280px;
     object-fit: cover;
     border-radius: var(--radius-sm);
     margin-bottom: var(--spacing-md);
     background-color: #e9e4d8;
+  }
+
+  @media screen and (min-width: 767) {
+    .accueil-profile-card__image {
+      width: 100%;
+    }
   }
 
   .accueil-profile-card__subtitle {

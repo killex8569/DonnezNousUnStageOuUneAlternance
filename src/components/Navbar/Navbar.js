@@ -13,10 +13,10 @@ function Navbar() {
     return (
       <div className='mobile-menu'>
         {/* Because here isShown = true, calling toogleMobileMenu sets isShown to false in every case */}
-        <Link to="/" onClick={toggleMobileMenu}>ACCUEIL</Link>
-        <Link to="/competences" onClick={toggleMobileMenu}>Nos compétences</Link>
-        <Link to="/parcours" onClick={toggleMobileMenu}>Notre parcours</Link>
-        <Link to="/about" onClick={toggleMobileMenu}>A propos</Link>
+        <Link to="/" onClick={toggleMobileMenu}>accueil</Link>
+        <Link to="/competences" onClick={toggleMobileMenu}>nos compétences</Link>
+        <Link to="/parcours" onClick={toggleMobileMenu}>notre parcours</Link>
+        <Link to="/about" onClick={toggleMobileMenu}>à propos</Link>
       </div>
     );
   };
@@ -30,9 +30,9 @@ function Navbar() {
         {/* Desktop Menu, which only appears on large screens */}
         <div className='menu'>
           <Link to="/" className={ActiveLink === 0 ? "active-link" : ""} onClick={() => { setActiveLink(0) }}>Accueil</Link>
-          <Link to="/competences" className={ActiveLink === 1 ? "active-link" : ""} onClick={() => { setActiveLink(1) }}>Nos compétences</Link>
-          <Link to="/parcours" className={ActiveLink === 2 ? "active-link" : ""} onClick={() => { setActiveLink(2) }}>Notre parcours</Link>
-          <Link to="/about" className={ActiveLink === 3 ? "active-link" : ""} onClick={() => { setActiveLink(3) }}>A propos</Link>
+          <Link to="/competences" className={ActiveLink === 1 ? "active-link" : ""} onClick={() => { setActiveLink(1) }}>nos compétences</Link>
+          <Link to="/parcours" className={ActiveLink === 2 ? "active-link" : ""} onClick={() => { setActiveLink(2) }}>notre parcours</Link>
+          <Link to="/about" className={ActiveLink === 3 ? "active-link" : ""} onClick={() => { setActiveLink(3) }}>à propos</Link>
         </div>
 
         {/* This button only shows up on small screens. It is used to open the mobile menu */}

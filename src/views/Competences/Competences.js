@@ -199,7 +199,7 @@ const AlexandreProfile = () => {
         <div className="row align-items-start mb-5 mt-3">
           <div className="col">
             <h4 className="competences-bold">Résumé</h4>
-            <div className="border border-2 rounded-3 p-3">
+            <div className="p-3 competences-border">
               <h5>Titulaire d’un BTS SIO option SISR obtenu à l’Institution des Chartreux, je poursuis actuellement mon cursus en cycle ingénieur à CPE Lyon.</h5>
               <h5>J’y consolide une expertise technique en développement logiciel (C, Python, Java et développement web full stack),</h5>
               <h5>en scripting et automatisation, en infrastructures et réseaux, en administration systèmes ainsi qu’en cybersécurité.</h5>
@@ -209,7 +209,7 @@ const AlexandreProfile = () => {
             <h4 className="competences-bold">Intitulés de postes idéaux</h4>
             <div className="row">
               <div className="col-md-3 col-sm-0"></div>
-              <div className="col-md-6 col-sm border border-2 rounded-3 p-3">
+              <div className="col-md-6 col-sm p-3 competences-border">
                 <h5>Administrateur systèmes/réseaux</h5>
                 <h5>Ingénieur Cybersécurité</h5>
                 <h5>Analyste SOC</h5>

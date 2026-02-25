@@ -12,7 +12,7 @@ function Timeline({ events }) {
           title={event.title}
           date={event.date}
           description={event.description}
-          isLast={index === events.length - 1}
+          position={index % 2 === 0 ? "left" : "right"}
         />
       ))}
     </div>

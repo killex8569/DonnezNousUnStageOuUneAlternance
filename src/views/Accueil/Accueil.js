@@ -88,7 +88,7 @@ function Accueil() {
             </article>
           </a>
 
-          <a target="_blank" href="mailto:valentin.ryckaert@protonmail.com" className="accueil-profile-card">
+          <a target="_blank" href="mailto:alexandre.faublanette@gmail.com" className="accueil-profile-card">
             <article>
               <img
                 src="Alexandre.jpg"

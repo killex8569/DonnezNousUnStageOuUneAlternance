@@ -91,7 +91,7 @@ function Accueil() {
           <a target="_blank" href="mailto:valentin.ryckaert@protonmail.com" className="accueil-profile-card">
             <article>
               <img
-                src="Alexandre.png"
+                src="Alexandre.jpg"
                 alt="Photo Alexandre FA"
                 className="accueil-profile-card__image"
               />

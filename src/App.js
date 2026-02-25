@@ -5,6 +5,7 @@ import './css/App.css'
 import Footer from './components/Footer/Footer';
 import Competences from './views/Competences/Competences';
 import About from './views/about/About';
+import NotreParcours from './views/Notre-parcours/NotreParcours';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/competences" element={<Competences />} />
-          <Route path="/parcours" element={<h1>Notre parcours</h1>} />
+          <Route path="/parcours" element={<NotreParcours/>} />
           <Route path="/about" element={<About/>}/>
           <Route path="*" element={<h1>404 - Page non trouvée</h1>} />
         </Routes>

@@ -1,0 +1,56 @@
+.timeline {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 0;
+  }
+  
+  .timeline-item {
+    display: flex;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  
+  .timeline-marker {
+    position: relative;
+    width: 40px; /* largeur fixe pour alignement stable */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timeline-dot {
+    width: 13px;
+    height: 13px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Ligne qui part du centre du point */
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+    left: 19px; /* moitié de .timeline-marker (40px / 2 - 1 pour centré) */
+    top: 14px;  /* part du bas du point (taille du dot) */
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-secondary);
+    z-index: 1;
+  }
+  
+  /* On supprime la ligne du dernier élément */
+  .timeline-item:last-child::after {
+    display: none;
+  }
+  
+  .timeline-content {
+    flex: 1;
+  }
+  
+  .timeline-date {
+    font-size: 0.85rem;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 5px;
+  }

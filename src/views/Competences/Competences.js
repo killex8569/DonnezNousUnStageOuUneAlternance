@@ -140,10 +140,6 @@ const AlexandreProfile = () => {
     {
       "Anglais": '',
     },
-<<<<<<< HEAD
-
-=======
->>>>>>> dev-val
     // Linux
     {
       "Arch": 'logos/arch.svg',

@@ -90,7 +90,7 @@ function Accueil() {
             </article>
           </a>
 
-          <a target="_blank" href="mailto:valentin.ryckaert@protonmail.com" className="accueil-profile-card">
+          <a target="_blank" href="mailto:alexandre.faublanette@gmail.com" className="accueil-profile-card">
             <article>
               <img
                 src="Alexandre.png"
@@ -106,47 +106,8 @@ function Accueil() {
             </article>
           </a>
 
-        </div>
+      </div>
       </section>
-
-{/* SECTION CV */}
-<section className="accueil-section accueil-cv-section">
-  <div className="accueil-cv-wrapper">
-
-    <a
-      target="_blank"
-      href="CV/CV_Valentin.pdf"
-      className="accueil-cv-card"
-      rel="noopener noreferrer"
-    >
-      <article>
-        <h3 className="accueil-cv-card__title">
-          CV Valentin Ryckaert
-        </h3>
-        <h5 className="accueil-cv-card__subtitle">
-          Ingénieur Web / Logiciel
-        </h5>
-      </article>
-    </a>
-
-    <a
-      target="_blank"
-      href="CV/CV_Alexandre.pdf"
-      className="accueil-cv-card"
-      rel="noopener noreferrer"
-    >
-      <article>
-        <h3 className="accueil-cv-card__title">
-          CV Alexandre FAUBLADIER-ANETTE
-        </h3>
-        <h5 className="accueil-cv-card__subtitle">
-          Ingénieur Système et Réseau
-        </h5>
-      </article>
-    </a>
-
-  </div>
-</section>
 
       {/* INFO BOX - ÉCOLE */}
       <section className="accueil-section accueil-info-box">
@@ -199,6 +160,34 @@ function Accueil() {
                 ))}
               </ul>
             </div>
+          </div>
+          <div className="accueil-cv">
+          <a
+            target="_blank"
+            href="CV/CV_Valentin.pdf"
+            className="accueil-cv-card"
+            rel="noopener noreferrer"
+          >
+            <article>
+              <h4 className="accueil-cv-card__title">
+                CV de Valentin
+              </h4>
+            </article>
+          </a>
+
+          <a
+            target="_blank"
+            href="CV/CV_Alexandre.pdf"
+            className="accueil-cv-card"
+            rel="noopener noreferrer"
+          >
+            <article>
+              <h4 className="accueil-cv-card__title">
+                CV d'Alexandre
+              </h4>
+            </article>
+          </a>
+
           </div>
         </div>
         <div className="accueil-feature__image">

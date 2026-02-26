@@ -1,45 +1,6 @@
-import React, { useState } from 'react';
+import {Switch, LeftContent, RightContent} from '../../components/Switch/Switch'
 import CompetencesTable from '../../components/CompetencesTable/ComptencesTable';
 import './Competences.css';
-
-// Composants pour le contenu gauche et droit du Switch
-const LeftContent = ({ children }) => <>{children}</>;
-const RightContent = ({ children }) => <>{children}</>;
-
-const Switch = ({ leftTitle, rightTitle, children }) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleSwitch = () => {
-    setIsActive(!isActive);
-  };
-
-  // Filtrer les enfants pour trouver LeftContent et RightContent
-  const leftContent = React.Children.toArray(children).find(child => child.type === LeftContent);
-  const rightContent = React.Children.toArray(children).find(child => child.type === RightContent);
-
-  return (
-    <div className="competences-container">
-      {/* Switch */}
-      <div className="competences-switch-container">
-        <label className={!isActive ? 'competences-label competences-active-label' : 'competences-label'}>
-          {leftTitle}
-        </label>
-        <div className={`competences-switch ${isActive ? 'active' : ''}`} onClick={toggleSwitch}>
-          <div className="competences-switch-toggle"></div>
-        </div>
-        <label className={isActive ? 'competences-label competences-active-label' : 'competences-label'}>
-          {rightTitle}
-        </label>
-      </div>
-
-      {/* Contenu */}
-      <div className="competences-profile-container">
-        {!isActive ? leftContent : null}
-        {isActive ? rightContent : null}
-      </div>
-    </div>
-  );
-};
 
 const AlexandreProfile = () => {
   let skillFamilyList = [

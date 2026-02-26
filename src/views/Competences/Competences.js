@@ -155,7 +155,6 @@ const AlexandreProfile = () => {
 
   return (
     <>
-      <h1 className="competences-title">Alexandre</h1>
       <div className="container text-center">
         <div className="row align-items-start mb-5 mt-3">
           <div className="col">
@@ -181,11 +180,9 @@ const AlexandreProfile = () => {
       </div>
       <Switch leftTitle={"Compétences"} rightTitle={"Certifications"}>
         <LeftContent>
-          <h4 className="competences-bold">Tableau de compétences</h4>
           <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary} />
         </LeftContent>
         <RightContent>
-          <h4 className="competences-bold mt-5">Mes Certifications</h4>
           <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary} forCertifs={true}/>
         </RightContent>
       </Switch>
@@ -341,7 +338,6 @@ const ValentinProfile = () => {
 
   return (
     <>
-      <h1 className="competences-title">Valentin</h1>
       <div className="container text-center">
         <div className="row align-items-start mb-5 mt-3">
           <div className="col">
@@ -370,11 +366,9 @@ const ValentinProfile = () => {
       </div>
       <Switch leftTitle={"Compétences"} rightTitle={"Certifications"}>
         <LeftContent>
-          <h4 className="competences-bold">Tableau de compétences</h4>
           <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary} forCertifs={false} />
         </LeftContent>
         <RightContent>
-          <h4 className="competences-bold mt-5">Mes Certifications</h4>
           <CompetencesTable skillFamilyList={CertificationDictionnaryList} skillsDictionnary={CertificationDictionnary} forCertifs={true} />
         </RightContent>
       </Switch>

@@ -22,3 +22,6 @@ Alex :
 val : 
 - Modifier A propos
 - Revoir les denriers détails
+
+# Deploy
+npm run deploy

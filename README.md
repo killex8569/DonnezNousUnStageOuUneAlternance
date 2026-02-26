@@ -13,17 +13,5 @@
 - Page : Nos Projets --> Page présentatn nos projets perso et scolaire.
 
 
-# Reste encore à finir
-
-Alex : 
-- Modifier les emplacements et les boutons pour les CV
-- Ajouter les logos (quand j'aurais le temps)
-- Mettre à jour les CV
 
 
-val : 
-- Modifier A propos
-- Revoir les denriers détails
-
-# Deploy
-npm run deploy

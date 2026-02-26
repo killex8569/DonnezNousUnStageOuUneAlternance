@@ -123,7 +123,7 @@
     background-color: #e9e4d8;
   }
 
-  @media screen and (min-width: 767) {
+  @media screen and (min-width: 767px) {
     .accueil-profile-card__image {
       width: 100%;
     }

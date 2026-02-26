@@ -7,10 +7,10 @@ const Footer = () => (
                 <div class="footer-col">
                     <h4 className="footer-h4">Plan du site</h4>
                     <ul className="footer-ul">
-                        <li><a target="_blank" href="#">Accueil</a></li>
-                        <li><a target="_blank" href="#">Nos compétences</a></li>
-                        <li><a target="_blank" href="#">Notre parcours</a></li>
-                        <li><a target="_blank" href="#">A propos</a></li>
+                        <li><a target="_blank" href="/">Accueil</a></li>
+                        <li><a target="_blank" href="/competences">Nos compétences</a></li>
+                        <li><a target="_blank" href="/parcours">Notre parcours</a></li>
+                        <li><a target="_blank" href="/about">A propos</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

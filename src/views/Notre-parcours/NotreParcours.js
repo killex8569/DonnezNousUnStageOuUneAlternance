@@ -15,13 +15,13 @@ function NotreParcours() {
     {
       id: 2,
       title: "Stage de deuxième année",
-      date: "Mars - Avril 2025",
+      date: "mars - avril 2025",
       description: "Stage de 8 semaines - Mise en place d'une solution de déploiement, mise à jour de leurs systèmes de supervision, cartographie du réseau, déplacements et interventions sur site client."
     },
     {
       id: 3,
       title: "Stage de première année de BTS",
-      date: "Mars - Avril 2025",
+      date: "juin - juillet 2024",
       description: "Stage de 6 semaines - Mise en place d'une solution de supervision, déplacements et interventions sur site client, création de documentation."
     },
     {
@@ -42,7 +42,7 @@ function NotreParcours() {
     {
       id: 1,
       title: "Master Ingénieur en Cybersécurité à CPE Lyon",
-      date: "En ce moment",
+      date: "En ce moment (2025 - 2028)",
       description: "Perfectionnement en cybersécurité, approfondissement des compétences en réseaux et développement, cours et travaux théoriques et pratiques, projets"
     },
     {
@@ -54,7 +54,7 @@ function NotreParcours() {
     {
       id: 3,
       title: "Stage en développement web (1ère année de BTS) : Xev",
-      date: "Juin - Juillet 2024",
+      date: "juin - juillet 2024",
       description: "stage de 6 semaines - travail sur différents projets agiles : Strapi, Angular, Shopify, Scripting en Python, ERP (Java, CSV)"
     },
     {

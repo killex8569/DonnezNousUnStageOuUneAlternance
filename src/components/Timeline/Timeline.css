@@ -115,12 +115,12 @@
   grid-column: 1;
   justify-self: end;
   text-align: right;
-  margin-left: auto; /* <--- AJOUTE CECI */
+  margin-left: auto;
 }
 
 .timeline-item.right .timeline-content {
   grid-column: 3;
   justify-self: start;
   text-align: left;
-  margin-right: auto; /* <--- AJOUTE CECI */
+  margin-right: auto;
 }

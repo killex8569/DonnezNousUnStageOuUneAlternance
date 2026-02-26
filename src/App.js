@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import './css/App.css'
 import Footer from './components/Footer/Footer';
 import Competences from './views/Competences/Competences';
-import About from './views/about/About';
+import About from './views/About/About';
 import NotreParcours from './views/Notre-parcours/NotreParcours';
 
 function App() {

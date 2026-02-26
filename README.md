@@ -12,8 +12,13 @@
 
 
 # Reste encore à finir
-- Ajouter nos CV dans About
-- Mettre les certifications (Alexandre)
-- Continuer et finir la timeline
+
+Alex : 
+- Modifier les emplacements et les boutons pour les CV
+- Ajouter les logos (quand j'aurais le temps)
+- Mettre à jour les CV
 
 
+val : 
+- Modifier A propos
+- Revoir les denriers détails

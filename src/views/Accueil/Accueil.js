@@ -109,6 +109,45 @@ function Accueil() {
         </div>
       </section>
 
+{/* SECTION CV */}
+<section className="accueil-section accueil-cv-section">
+  <div className="accueil-cv-wrapper">
+
+    <a
+      target="_blank"
+      href="CV/CV_Valentin.pdf"
+      className="accueil-cv-card"
+      rel="noopener noreferrer"
+    >
+      <article>
+        <h3 className="accueil-cv-card__title">
+          CV Valentin Ryckaert
+        </h3>
+        <h5 className="accueil-cv-card__subtitle">
+          Ingénieur Web / Logiciel
+        </h5>
+      </article>
+    </a>
+
+    <a
+      target="_blank"
+      href="CV/CV_Alexandre.pdf"
+      className="accueil-cv-card"
+      rel="noopener noreferrer"
+    >
+      <article>
+        <h3 className="accueil-cv-card__title">
+          CV Alexandre FAUBLADIER-ANETTE
+        </h3>
+        <h5 className="accueil-cv-card__subtitle">
+          Ingénieur Système et Réseau
+        </h5>
+      </article>
+    </a>
+
+  </div>
+</section>
+
       {/* INFO BOX - ÉCOLE */}
       <section className="accueil-section accueil-info-box">
         <div className="accueil-info-box__logo-container">
@@ -214,7 +253,7 @@ function Accueil() {
           </ul>
         </div>
         <div className="accueil-feature__image">
-          <span>⚙️ HomeLab Addicts</span>
+        <img src="nous_sommes_travailleurs.jpg" alt="nous sommes travailleurs"/>
         </div>
       </section>
 

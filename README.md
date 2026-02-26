@@ -14,8 +14,8 @@
 # Reste encore à finir
 
 Alex : 
-- Modifier les emplacements pour les CV
-- Ajouter les logos
+- Modifier les emplacements et les boutons pour les CV
+- Ajouter les logos (quand j'aurais le temps)
 - Mettre à jour les CV
 
 

@@ -253,7 +253,7 @@ function Accueil() {
           </ul>
         </div>
         <div className="accueil-feature__image">
-          <span>⚙️ HomeLab Addicts</span>
+        <img src="nous_sommes_travailleurs.jpg" alt="nous sommes travailleurs"/>
         </div>
       </section>
 

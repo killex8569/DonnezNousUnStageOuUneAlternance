@@ -9,32 +9,32 @@ function NotreParcours() {
       id: 1,
       title: "Master Ingénieur en Cybersécurité à CPE Lyon",
       date: "En ce moment (2025 - 2028)",
-      description: "Perfectionnement en cybersécurité, approfondissement des compétences en réseaux et développement, cours et travaux théoriques et pratiques, projets"
+      description: "Perfectionnement en cybersécurité, approfondissement des compétences en réseaux et développement, cours et travaux théoriques et pratiques, projets."
     },
-
+    
     {
       id: 2,
-      title: "Stage deuxième année",
+      title: "Stage de deuxième année",
       date: "Mars - Avril 2025",
-      description: "Stage de 8 semaines - Mise en place d'une solution de deploiement, mise à jour de leurs systèmes de supervisions, cartographie du réseau, déplacement et intervention sur site client."
+      description: "Stage de 8 semaines - Mise en place d'une solution de déploiement, mise à jour de leurs systèmes de supervision, cartographie du réseau, déplacements et interventions sur site client."
     },
     {
       id: 3,
-      title: "Stage première année de BTS",
+      title: "Stage de première année de BTS",
       date: "Mars - Avril 2025",
-      description: "Stage de 6 semaines - Mise en place d'une solution de supervision, déplacement et intervention sur site client, création de documentation"
+      description: "Stage de 6 semaines - Mise en place d'une solution de supervision, déplacements et interventions sur site client, création de documentation."
     },
     {
       id: 4,
-      title: "BTS informatique (SIO) spécialité système et réseau à l'Institution des Chartreux",
+      title: "BTS Informatique (SIO), spécialité Systèmes et Réseaux à l'Institution des Chartreux",
       date: "2023 - 2025",
-      description: "Apprentissage des concepts fondamentaux de l'informatique, cours et travaux pratiques en salle informatique (Réseaux, Développement, Cybersécurité...), spécialité réseau : mise en place d'infrastructure complète, travaux de groupes, Active directory, sécurisation du SI."
+      description: "Apprentissage des concepts fondamentaux de l'informatique, cours et travaux pratiques en salle informatique (Réseaux, Développement, Cybersécurité...), spécialité Réseaux : mise en place d'infrastructures complètes, travaux de groupe, Active Directory, sécurisation du SI."
     },
     {
-      id : 5,
-      title: "Baccalauréat spécialité scientifique",
+      id: 5,
+      title: "Baccalauréat spécialités scientifiques",
       date: "2020 - 2023",
-      description: "Obtention de mon BAC spécialté Maths, Physique et SVT"
+      description: "Obtention de mon baccalauréat spécialités Mathématiques, Physique et SVT."
     }
   ]
 

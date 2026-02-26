@@ -86,16 +86,16 @@ function About() {
             <br/>
             Je suis travailleur, assidu et sérieux. Sur mon temps personnel, j'aime découvrir de nouvelles technologies et les utiliser.
             <br/>
-            En dehors de l'informatique, je suis un grand passionné de robotique, d'astronomie, de sport (football et sports de combat) ainsi que de musique.
+            En-dehors de l'informatique, je suis un grand passionné de robotique, d'astronomie, de sport (football et sports de combat) ainsi que de musique.
           </p>
           <h4>Valentin</h4>
           <p>
             Je m'appelle Valentin, j'ai {getAge("November 24, 2005 07:00:00")} ans et je suis Lyonnais.
-            J'ai découvert l'informatique en classe de Seconde et suis devenu un passioné.
+            J'ai découvert l'informatique en classe de Seconde et suis devenu un passionné.
             <br/>
             Je suis quelqu'un de très attentif aux autres, à l'écoute des besoins de chacun.
             <br/>
-            En dehors de l'informatique, j'aime la littérature, la philosophie, l'astronomie, le football et la musique.
+            En-dehors de l'informatique, j'aime la littérature, la philosophie, l'astronomie, le football et la musique.
             <br/>
             Je suis également élève au Conservatoire de Lyon en Chant Lyrique.
           </p>

@@ -19,7 +19,7 @@ const Footer = () => (
                         <li><a target="_blank" href="https://github.com/killex8569/jeveuxunstageouunealternance">Lien GitHub</a></li>
                         <li><a target="_blank" href="https://react.dev/">React</a></li>
                         <li><a target="_blank" href="https://nodejs.org/en">Node.js</a></li>
-                        <li><a target="_blank" href="https://docs.github.com/en/pages">GitHub Pages</a></li>
+                        <li><a target="_blank" href="https://vercel.com">Vercel</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

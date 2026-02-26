@@ -7,34 +7,35 @@ function NotreParcours() {
   const AlexandreEvents = [
     {
       id: 1,
-      title: "Baccalauréat",
-      date: "Janvier 2025",
-      description: "Obtention de mon BAC spécialté Maths SVT."
+      title: "Master Ingénieur en Cybersécurité à CPE Lyon",
+      date: "En ce moment (2025 - 2028)",
+      description: "Perfectionnement en cybersécurité, approfondissement des compétences en réseaux et développement, cours et travaux théoriques et pratiques, projets"
     },
+
     {
       id: 2,
-      title: "Institution des Chartreux",
-      date: "2023 - 2024",
-      description: "Formation en BTS SIO option SISR (Réseau)."
+      title: "Stage deuxième année",
+      date: "Mars - Avril 2025",
+      description: "Stage de 8 semaines - Mise en place d'une solution de deploiement, mise à jour de leurs systèmes de supervisions, cartographie du réseau, déplacement et intervention sur site client."
     },
     {
       id: 3,
-      title: "Stage en première année de BTS",
-      date: "Juin - Juillet 2024",
-      description: "Stagiaire chez Advolis Orfis"
+      title: "Stage première année de BTS",
+      date: "Mars - Avril 2025",
+      description: "Stage de 6 semaines - Mise en place d'une solution de supervision, déplacement et intervention sur site client, création de documentation"
     },
     {
       id: 4,
-      title: "Stage en deuxième année de BTS",
-      date: "Mars - Avril 2025",
-      description: "Stagiaire chez Advolis Orfis"
+      title: "BTS informatique (SIO) spécialité système et réseau à l'Institution des Chartreux",
+      date: "2023 - 2025",
+      description: "Apprentissage des concepts fondamentaux de l'informatique, cours et travaux pratiques en salle informatique (Réseaux, Développement, Cybersécurité...), spécialité réseau : mise en place d'infrastructure complète, travaux de groupes, Active directory, sécurisation du SI."
     },
     {
-      id: 5,
-      title: "Formation d'ingénieur à CPE Lyon",
-      date: "2025 - 2026",
-      description: "Formation d'ingnéieur en Cybersécurité"
-    },
+      id : 5,
+      title: "Baccalauréat spécialité scientifique",
+      date: "2020 - 2023",
+      description: "Obtention de mon BAC spécialté Maths, Physique et SVT"
+    }
   ]
 
   const ValentinEvents = [

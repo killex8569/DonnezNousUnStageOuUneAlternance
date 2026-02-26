@@ -346,15 +346,15 @@ const ValentinProfile = () => {
     <>
       <div className="container text-center">
         <div className="row align-items-start mb-5 mt-3">
-          <div className="col">
+          <div className="col-md-6 col-12 mb-4 mb-md-0">
             <h4 className="competences-bold">Résumé</h4>
             <div className="p-3 competences-border">
-              <h5>Durant ma formation, j'ai pu acquérir des bonnes connaissances en développement, notamment en développement web.</h5>
-              <h5>J'ai pu aussi approfondir mes connaissances en infrastructure logicielle, avec des outils comme Docker, Apache, Nginx, CasaOS, Qemu/KVM etc...</h5>
-              <h5>Par ailleurs, j'utilise Linux quotidiennement, en tant que système d'exploitation principal.</h5>
+              <h5>Durant ma formation, <br className="responsive"/>j'ai pu acquérir des bonnes <br className="responsive"/>connaissances en développement,<br className="responsive"/> notamment en développement web.</h5>
+              <h5>J'ai pu aussi approfondir<br className="responsive"/> mes connaissances en infrastructure<br className="responsive"/> logicielle, avec des outils <br className="responsive"/>comme Docker, Apache, Nginx, <br className="responsive"/>CasaOS, Qemu/KVM etc...</h5>
+              <h5>Par ailleurs, j'utilise Linux<br className="responsive"/> quotidiennement, en tant que système d'exploitation principal.</h5>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-6 col-12">
             <h4 className="competences-bold">Intitulés de postes idéaux</h4>
             <div className="row">
               <div className="col-md-3 col-sm-0"></div>
@@ -365,10 +365,10 @@ const ValentinProfile = () => {
                 <h5>Ingénieur Cybersécurité</h5>
                 <h5>Ingénieur DevOps</h5>
                 <h5>Administrateur Systèmes</h5>
-              </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
       <Switch leftTitle={"Compétences"} rightTitle={"Certifications"} isRightActive={false}>
         <LeftContent>

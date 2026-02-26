@@ -44,7 +44,13 @@
   .accueil-container {
     padding: var(--spacing-lg) var(--spacing-sm);
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .accueil-container {
+      margin: 0 auto;
+    }
   }
   
   .accueil-section {
@@ -123,7 +129,7 @@
     background-color: #e9e4d8;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     .accueil-profile-card__image {
       width: 100%;
     }
@@ -165,9 +171,22 @@
    ======================================== */
   
   .accueil-cv {
-    display: flex;
+    display: block;
     margin-top: 30px;
     gap: 135px;
+  }
+
+  .accueil-cv a {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .accueil-cv {
+      display: flex;
+    }
+    .accueil-cv a {
+      margin-bottom: 0px;
+    }
   }
 
   .accueil-cv-card {

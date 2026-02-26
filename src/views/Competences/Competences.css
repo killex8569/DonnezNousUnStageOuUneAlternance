@@ -6,7 +6,7 @@
 
 .competences-border {
   border: 2px solid var(--color-primary);
-  border-radius: var(--radius-md);;
+  border-radius: var(--radius-md);
 }
 
 .competences-shieldp {

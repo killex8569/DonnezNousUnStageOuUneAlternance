@@ -44,8 +44,14 @@
 .switch-label {
   cursor: pointer;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 15px;
   user-select: none;
+}
+
+@media screen and (min-width: 450px) {
+  .switch-label {
+    font-size: 25px;
+  }
 }
 
 .switch-active-label {

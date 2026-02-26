@@ -53,3 +53,12 @@
     flex-direction: column;
   }
   
+  br.responsive {
+    display: inline;
+  }
+  
+  @media screen and (min-width: 450px) {
+    br.responsive {
+      display: none;
+    }
+  }

@@ -142,7 +142,7 @@ function Accueil() {
       {/* FEATURE 1 - COMPÉTENCES */}
       <section className="accueil-section accueil-feature">
         <div className="accueil-feature__content">
-          <h2>Nous sommes compétents</h2>
+          <h2>Nous sommes <br className="responsive"/>compétents</h2>
           <div className="accueil-skills">
             <div className="accueil-skill-card">
               <h4>Valentin</h4>
@@ -174,7 +174,6 @@ function Accueil() {
               </h4>
             </article>
           </a>
-
           <a
             target="_blank"
             href="CV/CV_Alexandre.pdf"

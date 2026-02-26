@@ -222,7 +222,7 @@ function Accueil() {
         <div className="accueil-feature__content">
           <h2>Nous sommes travailleurs</h2>
           <h4 style={{ marginBottom: 'var(--spacing-md)' }}>
-            Nous avons à cœur de donner le meilleur de nous même dans chacune
+            Nous avons à cœur de donner le meilleur de nous-mêmes dans chacune
             de nos missions.
           </h4>
           <ul className="accueil-projects">

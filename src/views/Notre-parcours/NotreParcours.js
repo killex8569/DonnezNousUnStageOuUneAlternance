@@ -72,15 +72,15 @@ function NotreParcours() {
   ]
 
   return (
-    <Switch leftTitle={"Alexandre"} rightTitle={"Valentin"}>
+    <Switch leftTitle={"Valentin"} rightTitle={"Alexandre"} isRightActive={true}>
       <LeftContent>
       <div className="notre-parcours">
-        <Timeline events={AlexandreEvents} />
+        <Timeline events={ValentinEvents} />
       </div>
       </LeftContent>
       <RightContent>
         <div className="notre-parcours">
-          <Timeline events={ValentinEvents} />
+          <Timeline events={AlexandreEvents} />
         </div>
       </RightContent>
     </Switch>

@@ -4,9 +4,9 @@ import './Switch.css'
 export const LeftContent = ({ children }) => <>{children}</>;
 export const RightContent = ({ children }) => <>{children}</>;
 
-export function Switch({ leftTitle, rightTitle, children }) {
+export function Switch({ leftTitle, rightTitle, children, isRightActive }) {
 
-    const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState(isRightActive);
 
     const toggleSwitch = () => {
         setIsActive(!isActive);

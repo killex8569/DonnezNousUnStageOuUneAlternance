@@ -173,7 +173,7 @@ const AlexandreProfile = () => {
           </div>
         </div>
       </div>
-      <Switch leftTitle={"Compétences"} rightTitle={"Certifications"}>
+      <Switch leftTitle={"Compétences"} rightTitle={"Certifications"} isRightActive={false}>
         <LeftContent>
           <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary} />
         </LeftContent>
@@ -370,7 +370,7 @@ const ValentinProfile = () => {
           </div>
         </div>
       </div>
-      <Switch leftTitle={"Compétences"} rightTitle={"Certifications"}>
+      <Switch leftTitle={"Compétences"} rightTitle={"Certifications"} isRightActive={false}>
         <LeftContent>
           <CompetencesTable skillFamilyList={skillFamilyList} skillsDictionnary={skillsDictionnary} forCertifs={false} />
         </LeftContent>
@@ -385,7 +385,7 @@ const ValentinProfile = () => {
 const Competences = () => {
 
   return (
-    <Switch leftTitle={"Valentin"} rightTitle={"Alexandre"}>
+    <Switch leftTitle={"Valentin"} rightTitle={"Alexandre"} isRightActive={false}>
       <LeftContent>
         <ValentinProfile/>
       </LeftContent>

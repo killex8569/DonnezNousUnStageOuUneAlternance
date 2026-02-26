@@ -42,7 +42,7 @@ function NotreParcours() {
     {
       id: 1,
       title: "Master Ingénieur en Cybersécurité à CPE Lyon",
-      date: "En ce moment",
+      date: "En ce moment (2025 - 2028)",
       description: "Perfectionnement en cybersécurité, approfondissement des compétences en réseaux et développement, cours et travaux théoriques et pratiques, projets"
     },
     {
@@ -54,7 +54,7 @@ function NotreParcours() {
     {
       id: 3,
       title: "Stage en développement web (1ère année de BTS) : Xev",
-      date: "Juin - Juillet 2024",
+      date: "juin - juillet 2024",
       description: "stage de 6 semaines - travail sur différents projets agiles : Strapi, Angular, Shopify, Scripting en Python, ERP (Java, CSV)"
     },
     {
@@ -72,15 +72,15 @@ function NotreParcours() {
   ]
 
   return (
-    <Switch leftTitle={"Alexandre"} rightTitle={"Valentin"}>
+    <Switch leftTitle={"Valentin"} rightTitle={"Alexandre"} isRightActive={true}>
       <LeftContent>
       <div className="notre-parcours">
-        <Timeline events={AlexandreEvents} />
+        <Timeline events={ValentinEvents} />
       </div>
       </LeftContent>
       <RightContent>
         <div className="notre-parcours">
-          <Timeline events={ValentinEvents} />
+          <Timeline events={AlexandreEvents} />
         </div>
       </RightContent>
     </Switch>

@@ -3,18 +3,30 @@ import './About.css';
 
 function About() {
 
+  const getAge = (dateString) => {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+    {
+        age--;
+    }
+    return age;
+  }
+
   const valeurs = [
     {
-      title: "Exigence technique",
-      desc: "Nous privilégions des architectures propres, maintenables et sécurisées. La qualité du code et l'optimisation sont des priorités."
+      title: "Exigence",
+      desc: "Nous sommes exgigents et sérieux dans notre travail. Nous avons à coeur des remplir correctement nos missions"
     },
     {
       title: "Culture Linux & Open Source",
-      desc: "Utilisation quotidienne de Linux, contribution et veille constante sur les technologies open-source."
+      desc: "Nous utilisons quotidiennement Linux ainsi que des logiciels open-sources (Draw.io, Krita, OnlyOffice...), et pratiquons une veille constante sur les technologies open-sources"
     },
     {
-      title: "Approche Infrastructure",
-      desc: "Maîtrise des environnements systèmes, réseaux et virtualisation avec une vision orientée production."
+      title: "Apprentissage",
+      desc: "Nous sommes deux passionnés d'informatique et nous nous intéressons à tous les domaines. Nous aimons développer constamment de nouvelles compétences"
     }
   ];
 
@@ -41,11 +53,21 @@ function About() {
       <section className="about-section">
         <div className="about-card">
           <h2>Qui sommes-nous ?</h2>
+          <br/>
+          <h4>Alexandre</h4>
           <p>
-            Étudiants ingénieurs à CPE Lyon, nous développons des compétences
-            solides en développement logiciel, systèmes, réseaux et sécurité.
-            Nous travaillons régulièrement sur des projets communs
-            afin de consolider nos compétences techniques.
+            blablablabla.
+          </p>
+          <h4>Valentin</h4>
+          <p>
+            Je m'appelle Valentin, j'ai {getAge("November 24, 2005 07:00:00")} ans et je suis lyonnais.
+            J'ai découvert l'informatique en classe de Seconde et suis devenu un passioné.
+            <br/>
+            Je suis quelqu'un de très attentif aux autres, à l'écoute des besoins de chacun.
+            <br/>
+            En dehors de l'informatique, j'aime la littérature, la philosophie, l'astronomie, le football et la musique.
+            <br/>
+            Je suis également élève au Conservatoire de Lyon en Chant Lyrique.
           </p>
         </div>
       </section>
@@ -83,7 +105,7 @@ function About() {
             <h4>Développement</h4>
             <p>
               Applications web full-stack, APIs REST, scripting et
-              automatisation.
+              automatisation, intérêts pour les frameworks peu connus
             </p>
           </div>
           <div className="about-stack-box">
@@ -97,7 +119,7 @@ function About() {
             <h4>Sécurité</h4>
             <p>
               Sécurité réseau, bonnes pratiques, segmentation, contrôle d'accès
-              et durcissement des systèmes.
+              et programmation défensive.
             </p>
           </div>
         </div>

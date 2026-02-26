@@ -21,6 +21,7 @@ const AlexandreProfile = () => {
   let skillsDictionnary = [
     // Web
     {
+      "React": 'logos/react.png',
       "FastAPI": 'logos/fastapi.png',
       "Vue.js": 'logos/vue.png',
       "Node.js": 'logos/nodejs.png',
@@ -45,17 +46,16 @@ const AlexandreProfile = () => {
       "Windows": 'logos/windows.png',
       "Linux": 'logos/linux.png',
       "Serveur Linux": 'logos/debian.png',
+      "Cisco": 'logos/cisco.png',
+      "Active Directory": 'logos/AD.jpg',
+      "Ansible": 'logos/ansible.png',
       "DNS": '',
       "DHCP": '',
       "Routage": '',
       "VLAN": '',
-      "Cisco": 'logos/cisco.png',
       "Switching": '',
       "VLSM/FLSM": '',
       "Supervision": '',
-      "Active Directory": 'logos/AD.jpg',
-      "Harden AD": '',
-      "Hello My Dir": '',
       "WDS / MDT": '',
       "SNMP": '',
     },
@@ -110,7 +110,7 @@ const AlexandreProfile = () => {
       "RHEL": 'logos/redhat.svg',
       "NixOs": 'logos/nixos.svg',
       "Kali": 'logos/kali.svg',
-      "Alpine": ''
+      "Alpine": 'logos/alpine-linux.png'
     },
     // Outils
     {
@@ -211,6 +211,7 @@ const ValentinProfile = () => {
   let skillsDictionnary = [
     // Web
     {
+      "React": 'logos/react.png',
       "Svelte": 'logos/svelte.svg',
       "FastAPI": 'logos/fastapi.png',
       "Deno": 'logos/deno.png',
@@ -257,9 +258,9 @@ const ValentinProfile = () => {
     },
     // Virtualisation
     {
-      "VMWare": '',
-      "vSphere": '',
-      "Qemu/KVM": '',
+      "VMWare": 'logos/vmware.jpg',
+      "vSphere": 'logos/vmware-vsphere.svg',
+      "Qemu/KVM": 'logos/QEMU.png',
     },
     // Cybersécurité
     {
@@ -277,7 +278,7 @@ const ValentinProfile = () => {
       "Docker": 'logos/docker.png',
       "Github": 'logos/github.png',
       "Gitlab": 'logos/gitlab.png',
-      "Apache": ''
+      "Apache": 'logos/apache.svg'
     },
     // DPL/Webmarketing
     {
@@ -298,13 +299,13 @@ const ValentinProfile = () => {
     },
     // Linux
     {
-      "Arch": '',
-      "Fédora": '',
-      "Ubuntu": '',
-      "Debian": '',
-      "RHEL": '',
-      "Kali": '',
-      "Alpine": ''
+      "Arch": 'logos/arch.svg',
+      "Fédora": 'logos/fedora.svg',
+      "Ubuntu": 'logos/ubuntu.svg',
+      "Debian": 'logos/debian.svg',
+      "RHEL": 'logos/redhat.svg',
+      "Kali": 'logos/kali.svg',
+      "Alpine": 'logos/alpine-linux.png'
     },
   ];
 

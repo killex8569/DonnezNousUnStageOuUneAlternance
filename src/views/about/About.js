@@ -56,7 +56,11 @@ function About() {
           <br/>
           <h4>Alexandre</h4>
           <p>
-            blablablabla.
+            Je m'appelle Alexandre, j'ai {getAge("July 5, 2005 07:00:00")} ans et je suis Lyonnais. Je me suis pris de passion pour l'informatique lors de ma dernière année de lycée.
+            <br/>
+            Je suis travailleur, assidu et sérieux. Sur mon temps personnel, j'aime découvrir de nouvelles technologies et les utiliser.
+            <br/>
+            En dehors de l'informatique, je suis un grand passionné de robotique, d'astronomie, de sport (football et sports de combat) ainsi que de musique.
           </p>
           <h4>Valentin</h4>
           <p>

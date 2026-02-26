@@ -115,10 +115,10 @@ const AlexandreProfile = () => {
     // Outils
     {
       "Obsidian": 'logos/obsidian.png',
-      "Only office": '',
-      "Suite office": '',
-      "VsCode": '',
-      "IntelliJ": '',
+      "Only office": 'logos/onlyoffice.png',
+      "Suite office": 'logos/suite-office.png',
+      "VsCode": 'logos/vscode.png',
+      "IntelliJ": 'logos/intellij.png',
     },
   ];
 
@@ -202,7 +202,8 @@ const ValentinProfile = () => {
     "DPL/Webmarketing",
     "Soft Skills",
     "Langues",
-    "Linux"
+    "Linux",
+    "Outils"
   ];
 
   let skillsDictionnary = [
@@ -303,6 +304,15 @@ const ValentinProfile = () => {
       "RHEL": 'logos/redhat.svg',
       "Kali": 'logos/kali.svg',
       "Alpine": 'logos/alpine-linux.png'
+    },
+    
+    // Outils
+    {
+      "Obsidian": 'logos/obsidian.png',
+      "Only office": 'logos/onlyoffice.png',
+      "Suite office": 'logos/suite-office.png',
+      "VsCode": 'logos/vscode.png',
+      "IntelliJ": 'logos/intellij.png',
     },
   ];
 

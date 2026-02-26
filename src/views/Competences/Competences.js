@@ -125,7 +125,6 @@ const AlexandreProfile = () => {
   let CertificationDictionnaryList = [
     "Cybersécurité",
     "Developpement",
-    "Réseau",
     "Systèmes",
     "Divers"
   ];
@@ -139,10 +138,6 @@ const AlexandreProfile = () => {
     },
     // Developpement
     {},
-    //Réseau
-    {
-      "Cisco": '',
-    },
     // Systèmes
     {
       "Redhat": ["certifs/alex-redhat.png", "Linux, RedHat Entreprise Linux (RHEL)"]

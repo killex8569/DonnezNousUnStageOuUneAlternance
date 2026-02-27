@@ -30,18 +30,22 @@ function Accueil() {
     {
       name: 'Europeanize Yourself!',
       desc: 'Document listant les alternatives européennes aux outils digitaux américains et asiatiques',
+      url : 'https://github.com/valentinRyckaert/Europeanize-yourself'
     },
     {
       name: 'L\'algo en 27 exos',
       desc: 'Exercices pour apprendre l\'algorithmie',
+      url : 'https://github.com/killex8569/algo-en-27-exos'
     },
     {
       name: 'Kosmoz',
       desc: 'Application permettant de découvrir notre galaxie et l\'Univers (Vue.js)',
+      url : 'https://github.com/killex8569/Kosmoz'
     },
     {
       name: 'DonnezNousUnStageOuUneAlternance',
       desc: 'Ce site que vous consultez !',
+      url : 'https://github.com/killex8569/DonnezNousUnStageOuUneAlternance'
     },
   ];
 
@@ -203,12 +207,20 @@ function Accueil() {
             cours.
           </h4>
           <ul className="accueil-projects">
-            {projects.map((project, idx) => (
-              <li key={`project-${idx}`}>
-                <strong>{project.name}</strong>
-                <div>{project.desc}</div>
-              </li>
-            ))}
+          {projects.map((project, idx) => (
+            <li key={`project-${idx}`}>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="accueil-project-link"
+              >
+                {/* Ajout de la classe ici */}
+                <strong className="accueil-projects__strong">{project.name}</strong>
+              </a>
+              <div>{project.desc}</div>
+            </li>
+          ))}
           </ul>
         </div>
         <div className="accueil-feature__image">

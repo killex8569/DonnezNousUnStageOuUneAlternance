@@ -13,7 +13,6 @@ function App() {
       <BrowserRouter>
         {/* Navigation */}
         <Navbar/>
-        <title>DNSA</title>
 
         {/* Routes */}
         <Routes>

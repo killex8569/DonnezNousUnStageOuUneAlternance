@@ -497,4 +497,20 @@
     .accueil-info-box__logo-container {
       gap: var(--spacing-sm);
     }
+    /* Style pour le lien du projet */
+    .accueil-project-link {
+      text-decoration: none; /* Enlève le soulignement par défaut si tu n'en veux pas */
+      color: inherit;        /* Force le lien à ignorer le bleu par défaut */
+      display: inline-block; /* Permet une meilleure zone de clic */
+    }
+
+    .accueil-project-link:hover .accueil-projects__strong {
+      text-decoration: underline; /* Optionnel : souligne au survol pour montrer que c'est cliquable */
+      opacity: 0.8;               /* Petit effet visuel au survol */
+    }
+
+    /* On s'assure que le strong garde sa couleur même dans un lien visité */
+    .accueil-project-link:visited {
+      color: inherit;
+    }
   }

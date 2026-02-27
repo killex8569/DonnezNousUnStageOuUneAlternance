@@ -16,13 +16,13 @@ function NotreParcours() {
       id: 2,
       title: "Stage de deuxième année",
       date: "mars - avril 2025",
-      description: "Stage de 8 semaines - Mise en place d'une solution de déploiement, mise à jour de leurs systèmes de supervision, cartographie du réseau, déplacements et interventions sur site client."
+      description: "Stage de 8 semaines Advolis Orfis - Mise en place d'une solution de déploiement, mise à jour de leurs systèmes de supervision, cartographie du réseau, déplacements et interventions sur site client."
     },
     {
       id: 3,
       title: "Stage de première année de BTS",
       date: "juin - juillet 2024",
-      description: "Stage de 6 semaines - Mise en place d'une solution de supervision, déplacements et interventions sur site client, création de documentation."
+      description: "Stage de 6 semaines Advolis Orfis - Mise en place d'une solution de supervision, déplacements et interventions sur site client, création de documentation."
     },
     {
       id: 4,

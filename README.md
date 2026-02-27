@@ -10,23 +10,11 @@
 - Page : Nos compétences --> Nos certifcations ainsi que nos compétences / Technologies que l'on maitrise
 - Page : Notre parcours --> Timeline résumant notre parcours
 - Page : A propos --> Informations supplémentaires sur nous
-- Page : Nos Projets --> Page présentatn nos projets perso et scolaire.
+- Page : Nos Projets --> Page présentant nos projets perso et scolaire.
 
 
+# A venir : 
 
+- Page Nos projets
+- Version Française et Anglaise du site
 
-<<<<<<< HEAD
-=======
-val : 
-- Modifier A propos
-- Revoir les denriers détails
-
-# Deploy
-npm run deploy
-
-# Amélioration
-
-- Responsive sur mobile
-- Ajouter une selection version française et anglaise
-- Ajouter ue page Project avec nos projets scolaire et perso
->>>>>>> dev

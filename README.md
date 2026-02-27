@@ -15,18 +15,3 @@
 
 
 
-<<<<<<< HEAD
-=======
-val : 
-- Modifier A propos
-- Revoir les denriers détails
-
-# Deploy
-npm run deploy
-
-# Amélioration
-
-- Responsive sur mobile
-- Ajouter une selection version française et anglaise
-- Ajouter ue page Project avec nos projets scolaire et perso
->>>>>>> dev

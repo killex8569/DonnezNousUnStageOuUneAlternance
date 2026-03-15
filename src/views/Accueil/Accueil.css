@@ -153,6 +153,10 @@
     flex-direction: column;
     gap: var(--spacing-xs);
   }
+
+  .accueil-profile-card__status .found {
+    color: rgb(113, 161, 41);
+  }
   
   @media (min-width: 768px) {
     .accueil-profiles {

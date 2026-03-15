@@ -84,7 +84,7 @@ function Accueil() {
               <h5 className="accueil-profile-card__subtitle">Ingénieur Web/Logiciel</h5>
               <br/>
               <div className="accueil-profile-card__status">
-                <span>❌ cherche désespérément un stage</span>
+                <span class="found">✅ a trouvé son stage !! embauché au CERN</span>
                 <span>❌ cherche désespérément une alternance</span>
               </div>
             </article>

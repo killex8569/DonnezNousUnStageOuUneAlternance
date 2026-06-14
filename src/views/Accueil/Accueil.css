@@ -147,6 +147,13 @@
   }
   
   .accueil-profile-card__status {
+    color: var(--color-okay);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  .accueil-profile-card__status_waiting {
     color: var(--color-danger);
     font-weight: bold;
     display: flex;

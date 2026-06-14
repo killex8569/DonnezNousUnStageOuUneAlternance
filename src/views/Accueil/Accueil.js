@@ -105,7 +105,9 @@ function Accueil() {
               <h3 className="accueil-profile-card__name">Alexandre F. Anette</h3>
               <h5 className="accueil-profile-card__subtitle">Ingénieur Systèmes/Réseaux</h5>
               <div className="accueil-profile-card__status">
-                <span>❌ Toujours en recherche d'un stage du 29 juin au 28 août</span>
+                <div className='accueil-profile-card__status_waiting'>
+                  <span>❌ Toujours en recherche d'un stage du 29 juin au 28 août</span>
+                </div>
                 <span>En alternance chez Alstom à partir de début septembre 2026</span>
               </div>
             </article>

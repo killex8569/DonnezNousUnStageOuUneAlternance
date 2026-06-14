@@ -88,8 +88,8 @@ function Accueil() {
               <h5 className="accueil-profile-card__subtitle">Ingénieur Web/Logiciel</h5>
               <br/>
               <div className="accueil-profile-card__status">
-                <span>En stage au CNRS jusqu'à fin août</span>
-                <span>En alternance chez Picturide à partir de début septembre 2026</span>
+                <span>En stage au CERN jusqu'à fin août</span>
+                <span>En alternance chez Picturide à partir de septembre 2026</span>
               </div>
               
             </article>
@@ -108,7 +108,7 @@ function Accueil() {
                 <div className='accueil-profile-card__status_waiting'>
                   <span>❌ Toujours en recherche d'un stage du 29 juin au 28 août</span>
                 </div>
-                <span>En alternance chez Alstom à partir de début septembre 2026</span>
+                <span>En alternance chez Alstom à partir de septembre 2026</span>
               </div>
             </article>
           </a>
